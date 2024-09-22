@@ -11,8 +11,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Navbar />
-        <Box style={{ width: "100%", textAlign: "justify" }}>{children}</Box>
+        <div className="main-content">
+          <Navbar />
+          <Box style={{ width: "100%", textAlign: "justify" }}>{children}</Box>
+        </div>
       </body>
     </html>
   );
