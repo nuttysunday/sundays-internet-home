@@ -1,25 +1,10 @@
-/*
-import aboutData from '../../public/aboutData.json';
-
-export default function HomePage() {
-  return (
-    <div>
-      <pre>{JSON.stringify(aboutData, null, 2)}</pre>
-    </div>
-  );
-}
-
-*/
-
-
 export default function Home() {
   return (
     <div>
-       <p>No color</p>
-        <p style={{ marginBottom:'2rem'}}  className="text-body-8 font-normal text-metal-600 dark:text-metal-300">Hi, I'm Shivam—yet another software engineer, currently pursuing my Master’s in Computer Science at NC State University, North Carolina. I’ve got a 3.6/4 GPA, and some of my favorite classes include Databases, Cloud Computing, Software Engineering, and Computer Networks. I’m set to graduate in May 2025—unless I mess up something along the way.</p>
-        <p style={{ marginBottom:'2rem'}}  className="text-body-8 font-normal text-metal-600 dark:text-metal-300">Before this, I wrapped up my undergrad in May 2023 from Mumbai University with an 8.6/10 GPA. I took courses like Web Development, Algorithms, and DevOps, with projects mainly revolving around Data Science and Machine Learning.</p>
-        <p style={{ marginBottom:'2rem'}}  className="text-body-8 font-normal text-metal-600 dark:text-metal-300">These days, I’m all about Full Stack Development and self-hosting web apps on a Raspberry Pi, using Cloudflare and Docker. Along the way, I’ve picked up some skills in wifi network security, remote desktop/SSH setups, firewall configurations, and OpenVPN and SMTP protocols with ImprovMX for mail forwarding.</p>
-        <p style={{ marginBottom:'2rem'}}  className="text-body-8 font-normal text-metal-600 dark:text-metal-300">I love exploring random new technologies and staying up-to-date with the latest in the computer world, by which I mean I just watch Fireship 🚀 on Youtube.</p>
+        <p style={{ marginBottom:'2rem'}}>Hi, I'm Shivam—yet another software engineer, currently pursuing my Master’s in Computer Science at NC State University, North Carolina. I’ve got a 3.6/4 GPA, and some of my favorite classes include Databases, Cloud Computing, Software Engineering, and Computer Networks. I’m set to graduate in May 2025—unless I mess up something along the way.</p>
+        <p style={{ marginBottom:'2rem'}}>Before this, I wrapped up my undergrad in May 2023 from Mumbai University with an 8.6/10 GPA. I took courses like Web Development, Algorithms, and DevOps, with projects mainly revolving around Data Science and Machine Learning.</p>
+        <p style={{ marginBottom:'2rem'}}>These days, I’m all about Full Stack Development and self-hosting web apps on a Raspberry Pi, using Cloudflare and Docker. Along the way, I’ve picked up some skills in wifi network security, remote desktop/SSH setups, firewall configurations, and OpenVPN and SMTP protocols with ImprovMX for mail forwarding.</p>
+        <p style={{ marginBottom:'2rem'}}>I love exploring random new technologies and staying up-to-date with the latest in the computer world, by which I mean I just watch Fireship 🚀 on Youtube.</p>
     </div>
   );
 }
