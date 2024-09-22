@@ -1,95 +1,25 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+/*
+import aboutData from '../../public/aboutData.json';
+
+export default function HomePage() {
+  return (
+    <div>
+      <pre>{JSON.stringify(aboutData, null, 2)}</pre>
+    </div>
+  );
+}
+
+*/
+
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    <div>
+       <p>No color</p>
+        <p style={{ marginBottom:'2rem'}}  className="text-body-8 font-normal text-metal-600 dark:text-metal-300">Hi, I'm Shivam—yet another software engineer, currently pursuing my Master’s in Computer Science at NC State University, North Carolina. I’ve got a 3.6/4 GPA, and some of my favorite classes include Databases, Cloud Computing, Software Engineering, and Computer Networks. I’m set to graduate in May 2025—unless I mess up something along the way.</p>
+        <p style={{ marginBottom:'2rem'}}  className="text-body-8 font-normal text-metal-600 dark:text-metal-300">Before this, I wrapped up my undergrad in May 2023 from Mumbai University with an 8.6/10 GPA. I took courses like Web Development, Algorithms, and DevOps, with projects mainly revolving around Data Science and Machine Learning.</p>
+        <p style={{ marginBottom:'2rem'}}  className="text-body-8 font-normal text-metal-600 dark:text-metal-300">These days, I’m all about Full Stack Development and self-hosting web apps on a Raspberry Pi, using Cloudflare and Docker. Along the way, I’ve picked up some skills in wifi network security, remote desktop/SSH setups, firewall configurations, and OpenVPN and SMTP protocols with ImprovMX for mail forwarding.</p>
+        <p style={{ marginBottom:'2rem'}}  className="text-body-8 font-normal text-metal-600 dark:text-metal-300">I love exploring random new technologies and staying up-to-date with the latest in the computer world, by which I mean I just watch Fireship 🚀 on Youtube.</p>
     </div>
   );
 }
