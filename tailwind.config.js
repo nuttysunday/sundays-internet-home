@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import { keepTheme } from "keep-react/keepTheme";
+const flowbite = require("flowbite-react/tailwind");
 
 const config  = {
   content: [
@@ -9,11 +10,12 @@ const config  = {
  
     // Or if using src directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx,html}",
+    flowbite.content(),
   ],
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [flowbite.content()],
 }
 
 export default keepTheme(config);

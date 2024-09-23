@@ -1,5 +1,6 @@
 import "./globals.css";
 import Navbar from "@components/Navbar";
+import Footer from "@components/Footer";
 import { Box } from "@mui/material";
 
 export const metadata = {
@@ -12,8 +13,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <div className="main-content">
-          <Navbar />
-          <Box style={{ width: "100%", textAlign: "justify" }}>{children}</Box>
+          
+              <Navbar />
+              <Box style={{ textAlign: "justify" }}>{children}</Box>
+            
+              <Footer />
+            
         </div>
       </body>
     </html>
