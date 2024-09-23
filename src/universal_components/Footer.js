@@ -5,9 +5,9 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import GetAppIcon from '@mui/icons-material/GetApp';
 
-const Footer = () => {
+const Footer = ({sx}) => {
   return (
-    <Box sx={{ display: "flex", gap: 2 }}>
+    <Box sx={{ ...sx, display: "flex", gap: 2, justifyContent:'center' }}>
       <Link
         href="https://github.com/nuttysunday"
         target="_blank"

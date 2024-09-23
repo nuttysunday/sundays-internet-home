@@ -5,16 +5,15 @@ import { Box } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import { usePathname } from "next/navigation";
 
-const Navbar = () => {
+const Navbar = ({ sx }) => {
   const pathname = usePathname();
-
   return (
-    <Box sx={{ flexGrow: 1, display: "flex", gap: '3rem' }}>
+    <Box sx={{ ...sx,display: "flex", gap: '3rem', justifyContent:'flex-end' }} >
       <Link href="/" passHref>
         <Typography 
           sx={{
             color: pathname === "/" ? "white" : undefined,
-            fontStyle: pathname === "/" ? "italic" : "normal",
+            fontStyle: pathname === "/" ? "normal" : "italic",
             padding: '0.5rem 0', 
             "&:hover": { color: "gray" }
           }}
@@ -26,7 +25,7 @@ const Navbar = () => {
         <Typography 
           sx={{
             color: pathname === "/work" ? "white" : undefined,
-            fontStyle: pathname === "/work" ? "italic" : "normal",
+            fontStyle: pathname === "/work" ? "normal" : "italic",
             padding: '0.5rem 0', 
             "&:hover": { color: "gray" }
           }}
@@ -38,7 +37,7 @@ const Navbar = () => {
         <Typography 
           sx={{
             color: pathname === "/skills" ? "white" : undefined,
-            fontStyle: pathname === "/skills" ? "italic" : "normal",
+            fontStyle: pathname === "/skills" ? "normal" : "italic",
             padding: '0.5rem 0', 
             "&:hover": { color: "gray" }
           }}
