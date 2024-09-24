@@ -99,3 +99,5 @@ before i do commit, just do build and then copy it and then push that to datab a
 s
 
 worry about testing the built image locally later
+
+local image not working properly
