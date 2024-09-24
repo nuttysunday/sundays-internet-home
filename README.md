@@ -100,4 +100,31 @@ s
 
 worry about testing the built image locally later
 
-local image not working properly
+
+Before commitinng build the image locally and i say yes, 
+then yes or else abort
+
+#!/bin/sh
+
+# Define output directory
+OUTPUT_DIR="output"
+
+# Run the npm build command
+npm run build
+
+# If the build fails, exit with a non-zero status
+if [ $? -ne 0 ]; then
+    echo "Build failed. Commit aborted."
+    exit 1
+fi
+
+# Create the output directory if it doesn't exist
+mkdir -p "$OUTPUT_DIR"
+
+# Copy the standalone build to the output directory
+cp -r .next/standalone "$OUTPUT_DIR/"
+
+# Add the output directory to git
+git add "$OUTPUT_DIR/"
+
+echo "Build completed and output copied to $OUTPUT_DIR."
