@@ -1,6 +1,7 @@
+Dockerfile
+.dockerignore
 node_modules
 npm-debug.log
-Dockerfile
-docker-publish.yml
-*.md
+README.md
+.next
 .git

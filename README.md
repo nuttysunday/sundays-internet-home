@@ -93,3 +93,5 @@ see if build inside docker or what for next
 how can i also combine caching
 
 use webhooks
+
+before i do commit, just do build and then copy it and then push that to datab as
