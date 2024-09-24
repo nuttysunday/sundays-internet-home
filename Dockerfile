@@ -4,7 +4,7 @@ FROM node:20-alpine AS runner
 # Set the working directory
 WORKDIR /app
 
-COPY output .next/standalone
+COPY output output
 
 # Set environment variables
 ENV PORT=8000
@@ -13,4 +13,4 @@ ENV PORT=8000
 EXPOSE 8000
 
 # Start the application
-CMD ["node", ".next/standalone/server.js"]
+CMD ["node", "./output/standalone/server.js"]
