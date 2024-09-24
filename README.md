@@ -1,35 +1,75 @@
-WIll need to see about rendering stuff# sundays-internet-home
+1. Figure out how the rendering works
+2. Using data in json, instead of html, better managment.
+3. Adding link indications?
+4. Figure, out ssr, why works page takes time.
+5. Page transition animation
+6. Setup a pipeline for live updates of size via docker.
+
+# Use the official Node.js image as the base image
+FROM node:18 AS builder
+
+# Set the working directory
+WORKDIR /app
+
+# Copy package.json and package-lock.json
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the rest of the application code
+COPY . .
+
+# Build the Next.js application
+RUN npm run build
+
+# Use a smaller image for the production environment
+FROM node:18 AS production
+
+# Set the working directory
+WORKDIR /app
+
+# Copy only the necessary files from the builder stage
+COPY --from=builder /app ./
+
+# Expose the port on which the app will run
+EXPOSE 3000
+
+# Start the Next.js application
+CMD ["npm", "start"]
 
 
-#loading animation
-#work on some prerendering logic?
-#using text data in json instead
-#linking out
 
-export default function Home() {
-  return (
-    <div className="p-6">
-      <h1 className="text-xl font-bold mb-4">Technologies I have used:</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="bg-gray-800 text-white p-4 rounded-lg shadow-md">
-          <h2 className="font-semibold">Languages</h2>
-          <p>Python, JavaScript, SQL, HTML/CSS</p>
-        </div>
-        <div className="bg-gray-800 text-white p-4 rounded-lg shadow-md">
-          <h2 className="font-semibold">Frameworks & API</h2>
-          <p>NextJS, React, Material UI, TailwindCSS, NodeJS, ExpressJS, Flask, RestAPI, Axios, FetchAPI, Postman</p>
-        </div>
-        <div className="bg-gray-800 text-white p-4 rounded-lg shadow-md">
-          <h2 className="font-semibold">Database, Cloud & Tools</h2>
-          <p>MySQL, MongoDB, Google Cloud, Docker, GitHub Actions, Vite, Webpack, npm, git</p>
-        </div>
-        <div className="bg-gray-800 text-white p-4 rounded-lg shadow-md">
-          <h2 className="font-semibold">Data Science Tools</h2>
-          <p>TensorFlow, scikit-learn, OpenCV, NumPy, pandas, Plotly, Seaborn, Matplotlib, Streamlit, Mediapipe</p>
-        </div>
-      </div>
-    </div>
-  );
-}
+# Use a smaller image for the production environment
+FROM node:18 AS production
 
-github pipeline
+# Create a non-root user with a home directory and no shell access
+RUN useradd --create-home --shell /usr/sbin/nologin portfolio_user
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the build output and other necessary files
+COPY .next .next
+COPY public public
+COPY src src
+COPY package.json ./
+COPY package-lock.json ./
+
+# Install production dependencies
+RUN npm install --only=production
+
+# Change ownership of the app directory to the non-root user
+RUN chown -R portfolio_user:portfolio_user /app
+
+# Set permissions to restrict access
+RUN chmod -R 500 /app
+
+# Switch to the non-root user
+USER portfolio_user
+
+# Expose the port on which the app will run
+EXPOSE 8000
+
+# Start the Next.js application on port 8000
+CMD ["npm", "start", "--", "-p", "8000"]
