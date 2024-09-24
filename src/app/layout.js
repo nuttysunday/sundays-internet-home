@@ -10,14 +10,18 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    
     <html lang="en">
       <body>
+
         <Box className= "font-mono text-indigo-300" style={{ width: '70%', height:'100%',maxWidth:'1200px', margin:'0 auto', display:'flex', flexDirection:'column'}}>
           <Navbar sx={ {marginTop:"3rem", marginBottom:'3rem' }}/>
           <Box style={{ textAlign: "justify" }}>{children}</Box>
           <Footer sx={{ position: 'sticky', bottom: '5rem', marginTop: 'auto', overflow:'hidden' }} />
         </Box>
+
       </body>
+      
     </html>
   );
 }
