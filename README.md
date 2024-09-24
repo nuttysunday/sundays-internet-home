@@ -131,3 +131,8 @@ echo "Build completed and output copied to $OUTPUT_DIR."
 
 Double commit glithc 
  when yes and then no in shell scritp for pre commit hook
+
+ ❯ git commit -m "end-to-end pipeline stable, building the next js app locally using st
+andalone, only using them to track in git stored in output directory. Using pre-commit
+in .git to first build the docker image locally, after its successfully tested by the 
+user, pushed on github, and then to Dockerhub, which is later pulled by watchtower"
