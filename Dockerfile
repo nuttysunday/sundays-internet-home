@@ -1,18 +1,30 @@
-# Use a smaller image for the production environment
-FROM node:18 AS production
+# Use an official Node.js runtime as a parent image
+FROM node:20 as builder
 
 # Set the working directory
 WORKDIR /app
 
-# Copy the build output and other necessary files
-COPY .next .next
-COPY public public
-COPY src src
-COPY package.json ./
-COPY package-lock.json ./
+# Copy package.json and package-lock.json (or yarn.lock)
+COPY package*.json ./
 
-# Install production dependencies
-RUN npm install --only=production
+# Install dependencies
+RUN npm install
+
+
+# Copy the rest of your application code
+COPY . .
+
+# Build the Next.js application
+RUN npm run build
+
+# Use a smaller image for the production environment
+FROM node:20 AS production
+
+# Set the working directory
+WORKDIR /app
+
+# Copy only the necessary files from the builder stage
+COPY --from=builder /app ./
 
 # Expose the port on which the app will run
 EXPOSE 8000

@@ -40,6 +40,19 @@ CMD ["npm", "start"]
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Use a smaller image for the production environment
 FROM node:18 AS production
 
@@ -73,3 +86,6 @@ EXPOSE 8000
 
 # Start the Next.js application on port 8000
 CMD ["npm", "start", "--", "-p", "8000"]
+
+
+see if build inside docker or what for next
