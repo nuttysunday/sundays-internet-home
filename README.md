@@ -128,3 +128,6 @@ cp -r .next/standalone "$OUTPUT_DIR/"
 git add "$OUTPUT_DIR/"
 
 echo "Build completed and output copied to $OUTPUT_DIR."
+
+Double commit glithc 
+ when yes and then no in shell scritp for pre commit hook
