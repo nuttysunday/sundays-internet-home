@@ -28,3 +28,4 @@ jobs:
         with:
           push: true
           tags: sundaydied/sundays-internet-home:latest
+          platforms: linux/amd64,linux/arm64

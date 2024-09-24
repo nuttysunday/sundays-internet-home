@@ -89,3 +89,7 @@ CMD ["npm", "start", "--", "-p", "8000"]
 
 
 see if build inside docker or what for next
+
+how can i also combine caching
+
+use webhooks
