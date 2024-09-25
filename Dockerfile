@@ -8,7 +8,7 @@ RUN addgroup -S portfolio_group && adduser -S portfoliouser -G portfolio_group -
 WORKDIR /app
 
 # Copy application files
-COPY output .
+COPY output/ .
 
 # Change ownership of the app files to the non-root user
 RUN chown -R portfoliouser:portfolio_group /app
@@ -23,4 +23,4 @@ EXPOSE 8000
 USER portfoliouser
 
 # Start the application
-CMD ["node", "./standalone/server.js"]
+CMD ["node", "server.js"]
