@@ -45,6 +45,18 @@ const Navbar = ({ sx }) => {
           SKILLS
         </Typography>
       </Link>
+      <Link href="/projects" passHref>
+        <Typography 
+          sx={{
+            color: pathname === "/projects" ? "white" : undefined,
+            fontStyle: pathname === "/projects" ? "normal" : "italic",
+            padding: '0.5rem 0', 
+            "&:hover": { color: "gray" }
+          }}
+        >
+          PROJECTS
+        </Typography>
+      </Link>
     </Box>
   );
 };
