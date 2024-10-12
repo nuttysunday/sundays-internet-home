@@ -24,14 +24,7 @@ export const TimelineComponent = () => {
             <span className="text-slate-200 font-bold">
               Certi Tester Web Application:{" "}
             </span>
-            Developed an industry-first, open-source web app for Certi Tester,
-            deployed on Raspberry Pi via Docker and hosted on a local network.
-            Built RESTful API endpoints with Flask for real-time data
-            acquisition, processing, and analysis. Designed the database schema
-            using MySQL as the backend. Designed an interactive dashboard using
-            React, Material UI, and Plotly for intuitive experiment analysis and
-            data visualization. Implemented a CI/CD pipeline using GitHub
-            Actions to automate image building and deployment to Docker Hub.
+            Developed an industry-first, open-source web app for Certi Tester, deployed on a Raspberry Pi via Docker and hosted on a local network. Built RESTful API endpoints with Flask for real-time data acquisition, processing, and analysis. Designed the database schema using MySQL as the backend. Enabled users to directly control the filter media tests through the web browser, utilizing threading to manage and sync timers. Implemented a Flask Socket server to display data in real-time on the dashboard, with the ability to push results to the database. Designed an interactive dashboard using React, Material UI, and Plotly for intuitive experiment analysis and data visualization. Developed a CI/CD pipeline with GitHub Actions to automate image building and deployment to Docker Hub.
           </p>
 
           <p className="text-sm" style={{ marginLeft: "1rem" }}>
