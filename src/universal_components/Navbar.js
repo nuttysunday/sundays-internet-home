@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 const Navbar = ({ sx }) => {
   const pathname = usePathname();
   return (
-    <Box sx={{ ...sx,display: "flex", gap: '3rem', justifyContent:'flex-end' }} >
+    <Box sx={{ ...sx,display: "flex", gap: {xs:'0rem', sm:"1rem", md:'3rem'}, flexDirection: { xs: "column", sm: "row", md: "row" }, }} >
       <Link href="/" passHref>
         <Typography 
           sx={{

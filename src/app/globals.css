@@ -12,17 +12,8 @@
 }
 
 
-html, body {
-  height: 100%;
-  width: 100%;
-}
-
 body {
-  /*border: 5px solid rebeccapurple;
-    background-color: #18181a;*/
   @apply bg-zinc-900;
-  min-height: 100vh;
-  min-width: 100vw;
 }
 
 .main-content{
