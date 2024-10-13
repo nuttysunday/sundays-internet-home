@@ -21,6 +21,7 @@ const LinuxIcon = (props) => (
 const projects = [
   {
     title: "Minimilistic News",
+    //githubLink: "https://github.com/wjasper/certi-tester-deployment",
     link: "https://news.shivam.foo",
     date: "10/12/2024",
     logo: <NewspaperIcon />,
@@ -63,7 +64,7 @@ const projects = [
     logo: <BackHandIcon />,
   },
   {
-    title: "Machine Learning on Covid19",
+    title: "Machine Learning and Data Analaysis on Covid-19",
     githubLink: "https://github.com/nuttysunday/Covid19-Prediction",
     date: "12/17/2020",
     logo: <CoronavirusIcon />,
@@ -88,17 +89,19 @@ const CaptureMyTweetButton = () => {
                 alignItems: "center",
                 padding: 3,
                 borderRadius: "20px",
-                boxShadow: "1px 1px 0px 0px #B0BEC5",
+                boxShadow: "3px 3px 0px 0px #B0BEC5",
                 position: "relative",
                 cursor: "pointer",
                 transition: "all 0.3s ease",
                 ":hover": {
                   transform: "translate(-5px, -5px)",
-                  boxShadow: "10px 10px 0px 0px #a5b4fc",
+                  boxShadow: "8px 8px 0px 0px #fae263, 15px 15px 0px 0px #a5b4fc ",
                 },
                 height: "8rem",
                 backgroundColor: "transparent",
                 color: "#a5b4fc",
+                border: "0.8px solid", 
+                borderColor: "#a5b4fc",
               }}
             >
               <Box sx={{ marginRight: 2 }}>{project.logo}</Box>

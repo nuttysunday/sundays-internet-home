@@ -61,7 +61,7 @@ const Footer = ({sx}) => {
         </Box>
       </Link>
       <Link
-        href="https://drive.google.com/file/d/1GxlXznPrULXn76GHeQkCNfnngn9G0Sxo/view?usp=sharing"
+        href="https://docs.google.com/document/d/e/2PACX-1vT02vaxSFn4V0yvp61oHaj73079Y-VVu3jWX-DXa-69OOjcSHdLgowbyEShv6pVmVpNYPb4JpTsz8jg/pub"
         target="_blank"
         rel="noopener noreferrer"
       >
