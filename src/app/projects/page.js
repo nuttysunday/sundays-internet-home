@@ -83,7 +83,7 @@ const projects = [
     },
     githubLink:
       "https://colab.research.google.com/drive/1LHuboysL-nvAOni9WLAMekQEWJyjYQqX?usp=sharing",
-    techStack: "Python, TensorFlow, Google Colab, CNN, Neural Networks"
+    techStack: "Python, TensorFlow, Google Colab, CNN, Neural Networks",
   },
   {
     title: "Protocol-Based Deep Intrusion Detection for DoS and DDoS Attacks",
@@ -92,10 +92,11 @@ const projects = [
     date: "May 2022",
     logo: <SensorOccupiedIcon />,
     description: {
-      introduction: "This is actually very cool project, and my first project as a freelancer, I am very proud that it has 20 stars on Github. This is my biggest money earned at that point, (around 200 bucks for 10 hours of work). This was super motivating for me. It is acutally based on the research paper, Protocol Based Deep Intrusion Detection for DoS Normal and DDoS Attacks. So what i did was collected the data, map the parameters [trust me it was difficult], process the data, and clean it. Trained a neural network (LSTM) using Tensorflow of the notion of upsampling, because the data was highly imbalance. ",
-
+      introduction:
+        "This is actually very cool project, and my first project as a freelancer, I am very proud that it has 20 stars on Github. This is my biggest money earned at that point, (around 200 bucks for 10 hours of work). This was super motivating for me. It is acutally based on the research paper, Protocol Based Deep Intrusion Detection for DoS Normal and DDoS Attacks. So what i did was collected the data, map the parameters [trust me it was difficult], process the data, and clean it. Trained a neural network (LSTM) using Tensorflow of the notion of upsampling, because the data was highly imbalance. ",
     },
-    techStack:"Python, TensorFlow, LSTM, Deep Learning, Pandas, Numpy, Matplotlib, Sklearn"
+    techStack:
+      "Python, TensorFlow, LSTM, Deep Learning, Pandas, Numpy, Matplotlib, Sklearn",
   },
   {
     title: "Healthcare Chatbot",
@@ -259,6 +260,7 @@ const CaptureMyTweetButton = () => {
             className="font-mono text-yellow-400"
             sx={{ display: "flex", gap: "2rem", flexDirection: "column" }}
           >
+            <Box>
             <IconButton
               onClick={handleCloseDrawer}
               sx={{ position: "absolute", top: 16, right: 16, color: "white" }}
@@ -267,16 +269,23 @@ const CaptureMyTweetButton = () => {
             </IconButton>
             <Typography
               variant="h5"
+              sx={{
+                fontFamily: "monospace",
+              }}
               className="font-mono text-yellow-400 underline decoration-4"
             >
               {selectedProject.title}
             </Typography>
+            </Box>
 
             {selectedProject.link && (
               <Link
                 href={selectedProject.link}
                 underline="none"
                 target="_blank"
+                sx={{
+                  fontFamily: "monospace",
+                }}
               >
                 {selectedProject.link}
               </Link>
@@ -284,46 +293,63 @@ const CaptureMyTweetButton = () => {
 
             <Typography
               variant="body1"
-              sx={{ textAlign: "justify" }}
+              sx={{ textAlign: { xs: "left", md: "justify" } , fontFamily: "monospace" }}
               className="font-mono text-pink-400"
             >
               {selectedProject.description.introduction}
             </Typography>
 
-            {selectedProject.description.youTubeEmbedSrc &&(<Box
-              sx={{
-                maxWidth: { xs: "90%", md: "600px" },
-                borderRadius: "12px",
-                overflow: "hidden",
-                margin: "0 auto",
-              }}
-            >
-              <iframe
-                src={selectedProject.description.youTubeEmbedSrc}
-                allow="accelerometer; clipboard-write; encrypted-media"
-                title="YouTube video player"
-                style={{
-                  width: "100%",
-                  height: "215px",
-                  border: "none",
+            {selectedProject.description.youTubeEmbedSrc && (
+              <Box
+                sx={{
+                  maxWidth: { xs: "90%", md: "600px" },
+                  borderRadius: "12px",
+                  overflow: "hidden",
+                  margin: "0 auto",
                 }}
-              />
-            </Box>)}
+              >
+                <iframe
+                  src={selectedProject.description.youTubeEmbedSrc}
+                  allow="accelerometer; clipboard-write; encrypted-media"
+                  title="YouTube video player"
+                  style={{
+                    width: "100%",
+                    height: "215px",
+                    border: "none",
+                  }}
+                />
+              </Box>
+            )}
 
             {selectedProject.githubLink && (
               <Link
                 href={selectedProject.githubLink}
                 underline="none"
                 target="_blank"
-                className="font-bold text-cyan-400"
+                className="text-cyan-400"
+                sx={{
+                  fontFamily: "monospace",
+                  fontWeight: "bold",
+                  fontSize: "1.2rem",
+                }}
               >
                 View on GitHub
               </Link>
             )}
 
             {selectedProject.techStack && (
-              <p className="font-mono text-green-400">
-                <span className="font-bold text-green-400 bold">
+              <p
+                className="font-mono text-green-400"
+                sx={{
+                  fontFamily: "monospace",
+                }}
+              >
+                <span
+                  className="font-bold text-green-400 bold"
+                  sx={{
+                    fontFamily: "monospace",
+                  }}
+                >
                   Tech Stack:{" "}
                 </span>
                 {selectedProject.techStack}

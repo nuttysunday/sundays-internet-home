@@ -9,7 +9,7 @@ const links = [
   { href: "https://docs.google.com/document/d/e/2PACX-1vT02vaxSFn4V0yvp61oHaj73079Y-VVu3jWX-DXa-69OOjcSHdLgowbyEShv6pVmVpNYPb4JpTsz8jg/pub", icon: Feed, label: "Resume" }
 ];
 
-const Footer = ({ sx }) => (
+const Information = ({ sx }) => (
   <Box sx={{ ...sx, display: "flex", gap: 2, justifyContent: {xs:"space-between"} }}>
     {links.map(({ href, icon: Icon, label }, index) => (
       <Tooltip key={index} title={label} arrow>
@@ -32,4 +32,4 @@ const Footer = ({ sx }) => (
   </Box>
 );
 
-export default Footer;
+export default Information;
