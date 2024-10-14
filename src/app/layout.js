@@ -12,16 +12,27 @@ import { Box } from "@mui/material";
 };
 
 const RootLayout = ({ children }) => {
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolling, setScrolling] = useState(false);
+  let scrollTimeout;
 
   const handleScroll = () => {
-    setScrolled(window.scrollY > 0);
+    setScrolling(true);
+
+    if (scrollTimeout) {
+      clearTimeout(scrollTimeout);
+    }
+    scrollTimeout = setTimeout(() => {
+      setScrolling(false);
+    }, 800);
   };
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      if (scrollTimeout) {
+        clearTimeout(scrollTimeout);
+      }
     };
   }, []);
 
@@ -44,20 +55,16 @@ const RootLayout = ({ children }) => {
               position: "sticky",
               top: 0,
               zIndex: 1000, 
-              marginTop: { xs: "1rem", md: "3rem" },
-              marginBottom: { xs: "1rem", md: "3rem" },
-              paddingLeft: {xs:'1rem'},
-              paddingRight: {xs:'1rem'},
-              paddingTop: {xs:'1rem'},
+              marginY: { xs: "1rem", md: "3rem" },
+              padding: { xs: '1rem 1rem 2rem', md: '2rem 2rem 0rem' },
               display: "flex",
               justifyContent: "space-between",
               flexDirection: { xs: "column", sm: "row", md: "row" },
               gap: { xs: '1rem' },
-              paddingBottom: { xs: '3rem', md: "0" },
               background: "linear-gradient(to top, rgba(24, 24, 27, 0.9), rgba(24, 24, 27, 1))", 
               borderRadius: "8px",
               boxShadow: {
-                xs: scrolled ? "0 15px 30px -15px rgba(255,255,255,0.4)" : "none",
+                xs: scrolling ? "0 15px 30px -15px rgba(255,255,255,0.4)" : "none",
                 lg: "none"
               },
             }}
@@ -65,8 +72,7 @@ const RootLayout = ({ children }) => {
             <Navbar />
             <Information />
           </Box>
-          <Box sx={{ paddingLeft: {xs:'1.2rem'},
-              paddingRight: {xs:'1.2rem'},position: "relative", zIndex: 1, textAlign: { xs: "left", md: "justify" } }}>
+          <Box sx={{  padding: { xs: '1.2rem 1.2rem 0rem', md: '2rem 2rem 0rem' },position: "relative", zIndex: 1, textAlign: { xs: "left", md: "justify" } }}>
             {children}
           </Box>
         </Box>
