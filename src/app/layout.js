@@ -33,10 +33,11 @@ export default function RootLayout({ children }) {
               gap: {xs: '1rem'}
             }}
           >
-            <Footer />
             <Navbar />
+            <Footer />
+            
           </Box>
-          <Box sx={{ textAlign: { xs: "left", md: "justify" } }}>{children}</Box>
+          <Box sx={{ textAlign: "justify"}}>{children}</Box>
         </Box>
         a
       </body>

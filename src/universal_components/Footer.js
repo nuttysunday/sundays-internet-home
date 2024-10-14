@@ -10,17 +10,18 @@ const links = [
 ];
 
 const Footer = ({ sx }) => (
-  <Box sx={{ ...sx, display: "flex", gap: 2 }}>
+  <Box sx={{ ...sx, display: "flex", gap: 2, justifyContent: {xs:"space-between"} }}>
     {links.map(({ href, icon: Icon, label }, index) => (
       <Tooltip key={index} title={label} arrow>
         <Link href={href} target="_blank" rel="noopener noreferrer">
           <Box
             sx={{
               padding: 1,
-              paddingLeft: index === 0 ? 0 : 1,
+              paddingRight: index === 3 ? 0 : 1,
               borderRadius: '50%',
               transition: 'transform 0.3s ease',
               '&:hover': { transform: 'scale(1.5)' },
+              paddingLeft: {xs: index === 0 ? 0 : 1},
             }}
           >
             <Icon sx={{ color: 'white' }} />
