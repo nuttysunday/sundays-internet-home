@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from 'react';
 import {
   Card,
   Typography,
@@ -19,6 +19,8 @@ import SensorOccupiedIcon from "@mui/icons-material/SensorOccupied";
 import SportsTennisIcon from "@mui/icons-material/SportsTennis";
 import EdgesensorHighIcon from "@mui/icons-material/EdgesensorHigh";
 import CloseIcon from "@mui/icons-material/Close";
+
+
 
 //https://github.com/PiyushCC/ai-image-enhancer-web-app
 
@@ -145,6 +147,7 @@ const CaptureMyTweetButton = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
 
+
   const handleOpenDrawer = (project) => {
     setSelectedProject(project);
     setOpenDrawer(true);
@@ -154,6 +157,8 @@ const CaptureMyTweetButton = () => {
     setOpenDrawer(false);
     setSelectedProject(null);
   };
+
+ 
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -243,41 +248,62 @@ const CaptureMyTweetButton = () => {
         onClose={handleCloseDrawer}
         PaperProps={{
           sx: {
-            padding: 3,
+            padding: {xs:'0 1rem' ,md:'1.4rem'},
             borderTopLeftRadius: "20px",
             borderTopRightRadius: "20px",
             width: "1050px",
             maxWidth: "100%",
-            margin: "0 auto",
             left: 0,
             right: 0,
             backgroundColor: "#18181b",
+            height: {xs: "80vh",lg: "41rem"},
+            overflow: "hidden",
+            margin: "0 auto"
           },
         }}
       >
         {selectedProject && (
           <Box
             className="font-mono text-yellow-400"
-            sx={{ display: "flex", gap: "2rem", flexDirection: "column" }}
+            sx={{
+              display: "flex",
+              gap: "2rem",
+              flexDirection: "column",
+              position: "relative",
+              overflowY:"auto",
+              '&::-webkit-scrollbar': {
+                display: 'none',
+              },
+              height:"100%"
+            }}
           >
-            <Box>
-            <IconButton
-              onClick={handleCloseDrawer}
-              sx={{ position: "absolute", top: 16, right: 16, color: "white" }}
-            >
-              <CloseIcon />
-            </IconButton>
-            <Typography
-              variant="h5"
+            <Box
               sx={{
-                fontFamily: "monospace",
+                position: "sticky", top: 0, zIndex: 1000,
+                display: "flex",
+                alignItems: "center",
+                justifyContent:"space-between",
+                background: "linear-gradient(to top, rgba(24, 24, 27, 0.9), rgba(24, 24, 27, 1))",
+                paddingBottom: { xs: '2rem' },
+                paddingTop: { xs: '1rem' },
+                padding:{lg:'0rem'}
               }}
-              className="font-mono text-yellow-400 underline decoration-4"
             >
-              {selectedProject.title}
-            </Typography>
+              <Typography
+                variant="h5"
+                sx={{
+                  fontFamily: "monospace",
+                  
+                }}
+                className="font-mono text-yellow-400 underline decoration-4"
+              >
+                {selectedProject.title}
+              </Typography>
+              <IconButton onClick={handleCloseDrawer} sx={{ color: "white" }}>
+                <CloseIcon />
+              </IconButton>
             </Box>
-
+            
             {selectedProject.link && (
               <Link
                 href={selectedProject.link}
@@ -293,7 +319,10 @@ const CaptureMyTweetButton = () => {
 
             <Typography
               variant="body1"
-              sx={{ textAlign: { xs: "left", md: "justify" } , fontFamily: "monospace" }}
+              sx={{
+                textAlign: { xs: "left", md: "justify" },
+                fontFamily: "monospace",
+              }}
               className="font-mono text-pink-400"
             >
               {selectedProject.description.introduction}
@@ -306,6 +335,7 @@ const CaptureMyTweetButton = () => {
                   borderRadius: "12px",
                   overflow: "hidden",
                   margin: "0 auto",
+                  minHeight: "215px",
                 }}
               >
                 <iframe

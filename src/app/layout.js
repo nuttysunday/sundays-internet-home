@@ -56,7 +56,7 @@ const RootLayout = ({ children }) => {
               top: 0,
               zIndex: 1000, 
               marginY: { xs: "1rem", md: "3rem" },
-              padding: { xs: '1rem 1rem 2rem', md: '2rem 2rem 0rem' },
+              padding: { xs: '1rem', md: '2rem 2rem 0rem' },
               display: "flex",
               justifyContent: "space-between",
               flexDirection: { xs: "column", sm: "row", md: "row" },
@@ -72,7 +72,7 @@ const RootLayout = ({ children }) => {
             <Navbar />
             <Information />
           </Box>
-          <Box sx={{  padding: { xs: '1.2rem 1.2rem 0rem', md: '2rem 2rem 0rem' },position: "relative", zIndex: 1, textAlign: { xs: "left", md: "justify" } }}>
+          <Box sx={{  padding: { xs: '1.2rem 1.2rem 0rem', md: '2rem 2rem 0rem' },position: "relative", zIndex: 1, textAlign: { xs: "left", md: "justify" } , marginBottom:'4rem'}}>
             {children}
           </Box>
         </Box>
