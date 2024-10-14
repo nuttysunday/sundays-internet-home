@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
             <Footer />
             
           </Box>
-          <Box sx={{ textAlign: "justify"}}>{children}</Box>
+          <Box sx={{ textAlign: { xs: "left", md: "justify" } }}>{children}</Box>
         </Box>
         a
       </body>
