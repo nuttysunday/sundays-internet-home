@@ -74,7 +74,10 @@ const projects = [
     description: {
       introduction:
         "This is actually very cool project, and my first project as a freelancer, I am very proud that it has 20 stars on Github. This is my biggest money earned at that point, (around 200 bucks for 10 hours of work). This was super motivating for me. It is acutally based on the research paper, Protocol Based Deep Intrusion Detection for DoS Normal and DDoS Attacks. So what i did was collected the data, map the parameters [trust me it was difficult], process the data, and clean it. Trained a neural network (LSTM) using Tensorflow of the notion of upsampling, because the data was highly imbalance. ",
-        image: ["/images/p_1.png", "/images/p_2.png"],
+        image: [
+          { src: "/images/p_1.png", caption: "This is the screenshot from the paper used, of how to manage imbalance of data." },
+          { src: "/images/p_2.png", caption: "This is the architecture of the complete model pipeline." }
+        ],
       specialInfo: ["It is also on:- https://paperswithcode.com/paper/protocol-based-deep-intrusion-detection-for"]  
     },
       
@@ -89,7 +92,10 @@ const projects = [
       introduction:"This was my undergrad project, my work was mainly related to the backend, and I trained and exported the deep learning model, I used Google Collab for the first time, and was pretty impressed with how fast GPUs it has, it was pretty cool, the model used to take input as Black and White image and spit out coloured image. Developed a neural network model inspired by the research paper titled Let There Be Color! Using the TensorFlow framework. The project involved meticulous data cleansing and preprocessing. I subsequently, trained the neural network model, enabling it to transform grayscale images into vividly coloured representations.",
       youTubeEmbedSrc:
         "https://www.youtube.com/embed/TuPTcf4F_EE?si=xSbXSscLsUtWalxW",
-      image: ["/images/ic_1.jpg", "/images/ic_2.png"],
+        image: [
+          { src: "/images/ic_1.jpg", caption: "This is the screenshot of the actual output of my model." },
+          { src: "/images/ic_2.png", caption: "This is the architecture used from the paper: 'Let there be Color!'" }
+        ],
     },
     githubLink:
       "https://colab.research.google.com/drive/1LHuboysL-nvAOni9WLAMekQEWJyjYQqX?usp=sharing",

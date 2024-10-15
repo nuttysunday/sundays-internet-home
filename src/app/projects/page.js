@@ -135,7 +135,8 @@ const Page = () => {
             left: 0,
             right: 0,
             backgroundColor: "#18181b",
-            minHeight: { xs: "80vh", sm: "100vh", lg: "41rem" },
+            minHeight: { xs: "80vh", sm: "80vh", lg: "41rem" },
+            height: { xs: "80vh", sm: "80vh", lg: "41rem" },
             overflow: "hidden",
             margin: "0 auto",
             paddingBottom: { xs: "1rem" },
@@ -159,6 +160,8 @@ const Page = () => {
           >
             <Box
               sx={{
+                padding: 0, // No padding to avoid gaps
+                margin: 0,
                 position: "sticky",
                 top: 0,
                 zIndex: 1000,
@@ -167,9 +170,8 @@ const Page = () => {
                 justifyContent: "space-between",
                 background:
                   "linear-gradient(to top, rgba(24, 24, 27, 0.9), rgba(24, 24, 27, 1))",
-                paddingBottom: { xs: "2rem" },
-                paddingTop: { xs: "1rem" },
-                padding: { lg: "0rem" },
+                paddingBottom: { xs: "1rem", lg: "2rem" },
+                paddingTop: { xs: "1rem",  lg: "2rem" },
               }}
             >
               <Typography
@@ -212,89 +214,72 @@ const Page = () => {
               {selectedProject.description.introduction}
             </Typography>
 
+            {selectedProject.description.youTubeEmbedSrc && (
+              <Box
+                sx={{
+                  maxWidth: { xs: "90%", md: "600px" },
+                  borderRadius: "12px",
+                  overflow: "hidden",
+                  margin: "0 auto",
+                  minHeight: "215px",
+                }}
+              >
+                <iframe
+                  src={selectedProject.description.youTubeEmbedSrc}
+                  allow="accelerometer; clipboard-write; encrypted-media"
+                  title="YouTube video player"
+                  style={{
+                    width: "100%",
+                    height: "215px",
+                    border: "none",
+                  }}
+                />
+              </Box>
+            )}
 
-            {
-            // if image is present
-            selectedProject.description.image &&
+            {selectedProject.description.image &&
               selectedProject.description.image.length > 0 && (
                 <Box
                   sx={{
                     display: "flex",
+                    flexDirection: "column",
+                    gap: "2rem",
                     alignItems: "center",
-                    flexDirection: { xs: "column", md: "row" },
-                    gap: { xs: "2rem" },
-                    maxWidth: { xs: "90%", md: "100%" },
-                    border: "1px green solid",
+                    border: "0px red solid",
                   }}
                 >
-                  {selectedProject.description.youTubeEmbedSrc && (
+                  {selectedProject.description.image.map((imgObj, index) => (
                     <Box
+                      key={index}
                       sx={{
-                        borderRadius: "12px",
-                        margin:
-                          selectedProject.description.image &&
-                          selectedProject.description.image.length > 0
-                            ? "0"
-                            : "0 auto",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        flexGrow: 1,
-                        width: { xs: "100%",sm:"300px"},
+                        textAlign: "center",
+                        border: "0px blue solid",
+                        width: "300px",
                       }}
                     >
-                      <iframe
-                        src={selectedProject.description.youTubeEmbedSrc}
-                        allow="accelerometer; clipboard-write; encrypted-media"
-                        title="YouTube video player"
+                      <img
+                        src={imgObj.src}
+                        alt={`Project image ${index + 1}`}
                         style={{
                           width: "100%",
-                          height: "215px",
+                          height: "auto",
                           borderRadius: "12px",
+                          marginBottom: "1rem",
                         }}
                       />
+                      <Typography
+                        className="font-mono text-lime-400"
+                        sx={{
+                          fontFamily: "monospace",
+                          textAlign: { xs: "left", md: "justify" },
+                        }}
+                      >
+                        {imgObj.caption}
+                      </Typography>
                     </Box>
-                  )}
-
-                  {selectedProject.description.image.map((imgSrc, index) => (
-                    <img
-                      key={index}
-                      src={imgSrc}
-                      alt={`Project image ${index + 1}`}
-                      style={{
-                        height: "215px",
-                        borderRadius: "12px",
-                      }}
-                    />
                   ))}
                 </Box>
               )}
-
-              {
-                // if images is not present
-                !selectedProject.description.image && selectedProject.description.youTubeEmbedSrc && (
-                    <Box
-                      sx={{
-                        maxWidth: { xs: "90%", md: "600px" },
-                        borderRadius: "12px",
-                        overflow: "hidden",
-                        margin: "0 auto",
-                        minHeight: "215px",
-                      }}
-                    >
-                      <iframe
-                        src={selectedProject.description.youTubeEmbedSrc}
-                        allow="accelerometer; clipboard-write; encrypted-media"
-                        title="YouTube video player"
-                        style={{
-                          width: "100%",
-                          height: "215px",
-                          border: "none",
-                        }}
-                      />
-                    </Box>
-                  )
-              }
 
             {selectedProject.githubLink && (
               <Link
