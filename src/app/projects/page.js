@@ -156,7 +156,7 @@ const CaptureMyTweetButton = () => {
     setOpenDrawer(false);
     setSelectedProject(null);
   };
-
+ 
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={4} rowSpacing={4}>
@@ -170,6 +170,7 @@ const CaptureMyTweetButton = () => {
               TransitionComponent={Fade}
               TransitionProps={{ timeout: 600 }}
               followCursor
+              enterTouchDelay={0}
             >
               <Card
                 sx={{
@@ -192,7 +193,9 @@ const CaptureMyTweetButton = () => {
                   border: "0.8px solid",
                   borderColor: "#a5b4fc",
                 }}
-                onClick={() => handleOpenDrawer(project)}
+                onClick={() => {
+                  handleOpenDrawer(project); 
+                }}
               >
                 <Box sx={{ marginRight: 2 }}>{project.logo}</Box>
                 <Box
