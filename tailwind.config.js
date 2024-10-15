@@ -13,7 +13,8 @@ const config  = {
     flowbite.content(),
   ],
   theme: {
-    extend: {},
+    extend: {
+    },
   },
   plugins: [flowbite.content()],
 }

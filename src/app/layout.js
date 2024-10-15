@@ -38,6 +38,9 @@ const RootLayout = ({ children }) => {
 
   return (
     <html lang="en">
+       <head>
+        
+       </head>
       <body>
         <Box
           className="font-mono text-indigo-300"
