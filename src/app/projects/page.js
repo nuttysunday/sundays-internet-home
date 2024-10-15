@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import {
   Card,
   Typography,
@@ -19,8 +19,8 @@ import SensorOccupiedIcon from "@mui/icons-material/SensorOccupied";
 import SportsTennisIcon from "@mui/icons-material/SportsTennis";
 import EdgesensorHighIcon from "@mui/icons-material/EdgesensorHigh";
 import CloseIcon from "@mui/icons-material/Close";
-
-
+import Tooltip from "@mui/material/Tooltip";
+import Fade from "@mui/material/Fade";
 
 //https://github.com/PiyushCC/ai-image-enhancer-web-app
 
@@ -147,7 +147,6 @@ const CaptureMyTweetButton = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
 
-
   const handleOpenDrawer = (project) => {
     setSelectedProject(project);
     setOpenDrawer(true);
@@ -158,86 +157,76 @@ const CaptureMyTweetButton = () => {
     setSelectedProject(null);
   };
 
- 
-
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={4} rowSpacing={4}>
         {projects.map((project, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
-            <Card
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                padding: 3,
-                borderRadius: "20px",
-                boxShadow: "3px 3px 0px 0px #B0BEC5",
-                position: "relative",
-                cursor: "pointer",
-                transition: "all 0.3s ease",
-                ":hover": {
-                  transform: "translate(-5px, -5px)",
-                  boxShadow:
-                    "8px 8px 0px 0px #fae263, 15px 15px 0px 0px #a5b4fc",
-                },
-                height: "8rem",
-                backgroundColor: "transparent",
-                color: "#a5b4fc",
-                border: "0.8px solid",
-                borderColor: "#a5b4fc",
-              }}
-              onClick={() => handleOpenDrawer(project)}
+            <Tooltip 
+                title={<span className="font-mono text-yellow-400 rounded text-sm">
+                Click Me
+              </span>}
+              placement="top"
+              TransitionComponent={Fade}
+              TransitionProps={{ timeout: 600 }}
+              followCursor
             >
-              <Box sx={{ marginRight: 2 }}>{project.logo}</Box>
-              <Box
-                sx={{ display: "flex", flexDirection: "column", gap: "0.2rem" }}
+              <Card
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  padding: 3,
+                  borderRadius: "20px",
+                  boxShadow: "3px 3px 0px 0px #B0BEC5",
+                  position: "relative",
+                  cursor: "pointer",
+                  transition: "all 0.3s ease",
+                  ":hover": {
+                    transform: "translate(-5px, -5px)",
+                    boxShadow:
+                      "8px 8px 0px 0px #fae263, 15px 15px 0px 0px #a5b4fc",
+                  },
+                  height: "8rem",
+                  backgroundColor: "transparent",
+                  color: "#a5b4fc",
+                  border: "0.8px solid",
+                  borderColor: "#a5b4fc",
+                }}
+                onClick={() => handleOpenDrawer(project)}
               >
-                <Typography
-                  align="left"
+                <Box sx={{ marginRight: 2 }}>{project.logo}</Box>
+                <Box
                   sx={{
-                    fontWeight: "bold",
-                    fontSize: "0.875rem",
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "0.2rem",
+                  }}
+                >
+                  <Typography
+                    align="left"
+                    sx={{
+                      fontWeight: "bold",
+                      fontSize: "0.875rem",
+                      fontFamily: "monospace",
+                    }}
+                  >
+                    {project.title}
+                  </Typography>
+                </Box>
+                <Typography
+                  sx={{
+                    position: "absolute",
+                    bottom: 8,
+                    right: 16,
+                    fontSize: "0.75rem",
+                    color: "#fae263",
                     fontFamily: "monospace",
                   }}
                 >
-                  {project.title}
+                  {project.date}
                 </Typography>
-
-                {!project.link && project.githubLink && (
-                  <Link
-                    href={project.githubLink}
-                    underline="none"
-                    target="_blank"
-                    onClick={(e) => e.stopPropagation()} // Prevents drawer from opening
-                  >
-                    View on GitHub
-                  </Link>
-                )}
-
-                {project.link && (
-                  <Link
-                    href={project.link}
-                    underline="none"
-                    target="_blank"
-                    onClick={(e) => e.stopPropagation()} // Prevents drawer from opening
-                  >
-                    {project.link.replace(/^https?:\/\//, "")}
-                  </Link>
-                )}
-              </Box>
-              <Typography
-                sx={{
-                  position: "absolute",
-                  bottom: 8,
-                  right: 16,
-                  fontSize: "0.75rem",
-                  color: "#fae263",
-                  fontFamily: "monospace",
-                }}
-              >
-                {project.date}
-              </Typography>
-            </Card>
+              </Card>
+            </Tooltip>
           </Grid>
         ))}
       </Grid>
@@ -248,7 +237,7 @@ const CaptureMyTweetButton = () => {
         onClose={handleCloseDrawer}
         PaperProps={{
           sx: {
-            padding: {xs:'0 1rem' ,md:'1.4rem'},
+            padding: { xs: "0 1rem", md: "1.4rem" },
             borderTopLeftRadius: "20px",
             borderTopRightRadius: "20px",
             width: "1050px",
@@ -256,9 +245,11 @@ const CaptureMyTweetButton = () => {
             left: 0,
             right: 0,
             backgroundColor: "#18181b",
-            height: {xs: "80vh",lg: "41rem"},
+            height: { xs: "80vh", lg: "41rem" },
+            maxHeight: { xs: "80vh", lg: "41rem" },
             overflow: "hidden",
-            margin: "0 auto"
+            margin: "0 auto",
+            paddingBottom: { xs: "1rem" },
           },
         }}
       >
@@ -270,30 +261,32 @@ const CaptureMyTweetButton = () => {
               gap: "2rem",
               flexDirection: "column",
               position: "relative",
-              overflowY:"auto",
-              '&::-webkit-scrollbar': {
-                display: 'none',
+              overflowY: "auto",
+              "&::-webkit-scrollbar": {
+                display: "none",
               },
-              height:"100%"
+              height: "100%",
             }}
           >
             <Box
               sx={{
-                position: "sticky", top: 0, zIndex: 1000,
+                position: "sticky",
+                top: 0,
+                zIndex: 1000,
                 display: "flex",
                 alignItems: "center",
-                justifyContent:"space-between",
-                background: "linear-gradient(to top, rgba(24, 24, 27, 0.9), rgba(24, 24, 27, 1))",
-                paddingBottom: { xs: '2rem' },
-                paddingTop: { xs: '1rem' },
-                padding:{lg:'0rem'}
+                justifyContent: "space-between",
+                background:
+                  "linear-gradient(to top, rgba(24, 24, 27, 0.9), rgba(24, 24, 27, 1))",
+                paddingBottom: { xs: "2rem" },
+                paddingTop: { xs: "1rem" },
+                padding: { lg: "0rem" },
               }}
             >
               <Typography
                 variant="h5"
                 sx={{
                   fontFamily: "monospace",
-                  
                 }}
                 className="font-mono text-yellow-400 underline decoration-4"
               >
@@ -303,7 +296,7 @@ const CaptureMyTweetButton = () => {
                 <CloseIcon />
               </IconButton>
             </Box>
-            
+
             {selectedProject.link && (
               <Link
                 href={selectedProject.link}
@@ -311,9 +304,11 @@ const CaptureMyTweetButton = () => {
                 target="_blank"
                 sx={{
                   fontFamily: "monospace",
+                  fontWeight: "bold",
+                  fontSize: "1.2rem",
                 }}
               >
-                {selectedProject.link}
+                {selectedProject.link.replace(/^https?:\/\//, "")}
               </Link>
             )}
 
