@@ -41,8 +41,12 @@ const projects = [
     githubLink: "https://github.com/nuttysunday/Linux_Drivers",
     date: "2024",
     logo: <LinuxIcon />,
-    description:
-      "A Python package designed to ease the installation of MCC Linux drivers.",
+    description: {
+      introduction:
+      "This is still an ongoing project, this is my first open source project contribution",
+    },
+    techStack: "Python, Pypi"
+      
   },
   {
     title: "Certi Tester Full Stack Web App",
@@ -51,8 +55,9 @@ const projects = [
     logo: <EdgesensorHighIcon />,
     description: {
       introduction:
-        "A web application that connects to Certi Testers for real-time data display.",
+        "Update soon...",
     },
+    techStack: "Python, Flask, MySQL, Javascript, React, MaterialUI, Raspberry Pi, Docker, CI/CD Pipeline, Socket Programming [real-time data], Threading"
   },
   {
     title: "Minimalistic News",
@@ -72,8 +77,12 @@ const projects = [
     githubLink: "https://github.com/wjasper/PingPongTracker",
     date: "2024",
     logo: <SportsTennisIcon />,
-    description:
-      "A machine learning project to track and predict the distance of a ping pong ball.",
+    description: {
+      introduction:
+      "Update soon...",
+    },
+    techStack: "Python, OpenCV"
+      
   },
   {
     title: "Image Colorization",
@@ -335,7 +344,7 @@ const CaptureMyTweetButton = () => {
               variant="body1"
               sx={{
                 textAlign: "justify" ,
-                fontFamily: "monospace",wordSpacing: { xs: '-0.4em'}, fontSize: { xs: '1rem'}, letterSpacing: { xs: '-0.02em' }}}
+                fontFamily: "monospace"}}
               className="font-mono text-pink-400"
             >
               {selectedProject.description.introduction}
