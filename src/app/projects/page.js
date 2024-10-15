@@ -21,7 +21,8 @@ import EdgesensorHighIcon from "@mui/icons-material/EdgesensorHigh";
 import CloseIcon from "@mui/icons-material/Close";
 import Tooltip from "@mui/material/Tooltip";
 import Fade from "@mui/material/Fade";
-import ClickAwayListener from '@mui/material/ClickAwayListener';
+
+
 
 //https://github.com/PiyushCC/ai-image-enhancer-web-app
 
@@ -165,14 +166,27 @@ const CaptureMyTweetButton = () => {
       <Grid container spacing={4} rowSpacing={4}>
         {projects.map((project, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
-            <Tooltip disableFocusListener
+            <Tooltip enterTouchDelay={200}
+            arrow
+            slotProps={{
+              popper: {
+                modifiers: [
+                  {
+                    name: 'offset',
+                    options: {
+                      offset: [0, -50],
+                    },
+                  },
+                ],
+              },
+            }}
                 title={<span className="font-mono text-yellow-400 rounded text-sm">
                 Click Me
               </span>}
               placement="top"
               TransitionComponent={Fade}
-              TransitionProps={{ timeout: 600 }}
-              followCursor
+              TransitionProps={{ timeout: 200 }}
+              //followCursor
             >
               <Card
                 sx={{
@@ -320,9 +334,8 @@ const CaptureMyTweetButton = () => {
             <Typography
               variant="body1"
               sx={{
-                textAlign: { xs: "left", md: "justify" },
-                fontFamily: "monospace",
-              }}
+                textAlign: "justify" ,
+                fontFamily: "monospace",wordSpacing: { xs: '-0.4em'}, fontSize: { xs: '1rem'}, letterSpacing: { xs: '-0.02em' }}}
               className="font-mono text-pink-400"
             >
               {selectedProject.description.introduction}

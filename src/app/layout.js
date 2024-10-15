@@ -73,7 +73,7 @@ const RootLayout = ({ children }) => {
             <Navbar />
             <Information />
           </Box>
-          <Box sx={{  padding: { xs: '1.2rem 1.2rem 0rem', md: '2rem 2rem 0rem' },position: "relative", zIndex: 1, textAlign: { xs: "left", md: "justify" } , marginBottom:'4rem'}}>
+          <Box sx={{  padding: { xs: '1.2rem 1.2rem 0rem', md: '2rem 2rem 0rem' },position: "relative", zIndex: 1, textAlign:{xs:"left", md: "justify"}  , marginBottom:'4rem'}}>
             {children}
           </Box>
         </Box>
