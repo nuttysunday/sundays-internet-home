@@ -21,6 +21,7 @@ import EdgesensorHighIcon from "@mui/icons-material/EdgesensorHigh";
 import CloseIcon from "@mui/icons-material/Close";
 import Tooltip from "@mui/material/Tooltip";
 import Fade from "@mui/material/Fade";
+import ClickAwayListener from '@mui/material/ClickAwayListener';
 
 //https://github.com/PiyushCC/ai-image-enhancer-web-app
 
@@ -157,12 +158,14 @@ const CaptureMyTweetButton = () => {
     setSelectedProject(null);
   };
  
+
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={4} rowSpacing={4}>
         {projects.map((project, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
-            <Tooltip 
+            <Tooltip disableFocusListener
                 title={<span className="font-mono text-yellow-400 rounded text-sm">
                 Click Me
               </span>}
@@ -170,7 +173,6 @@ const CaptureMyTweetButton = () => {
               TransitionComponent={Fade}
               TransitionProps={{ timeout: 600 }}
               followCursor
-              enterTouchDelay={0}
             >
               <Card
                 sx={{
