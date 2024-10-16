@@ -13,7 +13,7 @@
       "static/chunks/23-f5f819f656054356.js",
       "static/chunks/main-app-6af752caf62e832e.js",
       "static/css/e588391ba1a1e79e.css",
-      "static/css/cde54fbbe29e6931.css",
+      "static/css/f8632ce66ca1d381.css",
       "static/chunks/570-5827bcab39ab2ff2.js",
       "static/chunks/787-75fc12dba8b8a57f.js",
       "static/chunks/231-8b6b665dad519162.js",
@@ -27,6 +27,13 @@
       "static/chunks/231-8b6b665dad519162.js",
       "static/chunks/app/blogs/page-d78c5f8b72c00f78.js"
     ],
+    "/page": [
+      "static/chunks/webpack-2b9fb6867f1b33aa.js",
+      "static/chunks/fd9d1056-858637d525bb3ac1.js",
+      "static/chunks/23-f5f819f656054356.js",
+      "static/chunks/main-app-6af752caf62e832e.js",
+      "static/chunks/app/page-0439178d8906d79f.js"
+    ],
     "/projects/page": [
       "static/chunks/webpack-2b9fb6867f1b33aa.js",
       "static/chunks/fd9d1056-858637d525bb3ac1.js",
@@ -35,7 +42,7 @@
       "static/chunks/570-5827bcab39ab2ff2.js",
       "static/chunks/787-75fc12dba8b8a57f.js",
       "static/chunks/39-b6108f9f9d64a012.js",
-      "static/chunks/app/projects/page-3cffefb6858ef3b7.js"
+      "static/chunks/app/projects/page-9ba3f258f0be85f5.js"
     ],
     "/skills/page": [
       "static/chunks/webpack-2b9fb6867f1b33aa.js",
@@ -44,19 +51,12 @@
       "static/chunks/main-app-6af752caf62e832e.js",
       "static/chunks/app/skills/page-01c39734e74f9917.js"
     ],
-    "/page": [
-      "static/chunks/webpack-2b9fb6867f1b33aa.js",
-      "static/chunks/fd9d1056-858637d525bb3ac1.js",
-      "static/chunks/23-f5f819f656054356.js",
-      "static/chunks/main-app-6af752caf62e832e.js",
-      "static/chunks/app/page-0439178d8906d79f.js"
-    ],
     "/blogs/self-hosting/page": [
       "static/chunks/webpack-2b9fb6867f1b33aa.js",
       "static/chunks/fd9d1056-858637d525bb3ac1.js",
       "static/chunks/23-f5f819f656054356.js",
       "static/chunks/main-app-6af752caf62e832e.js",
-      "static/chunks/app/blogs/self-hosting/page-25e0bec5b9278fe2.js"
+      "static/chunks/app/blogs/self-hosting/page-dcffb970062b0656.js"
     ],
     "/work/page": [
       "static/chunks/webpack-2b9fb6867f1b33aa.js",

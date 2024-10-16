@@ -135,9 +135,9 @@ const Page = () => {
             left: 0,
             right: 0,
             backgroundColor: "#18181b",
-            minHeight: { xs: "80vh", sm: "80vh", lg: "41rem" },
-            height: { xs: "80vh", sm: "80vh", lg: "41rem" },
-            overflow: "hidden",
+            height: { xs: "80vh", sm: "80vh", lg: "85vh" },
+            //maxHeight: { xs: "80vh", sm: "80vh", lg: "80vh" },
+            overflow: "auto",
             margin: "0 auto",
             paddingBottom: { xs: "1rem" },
           },
@@ -170,8 +170,8 @@ const Page = () => {
                 justifyContent: "space-between",
                 background:
                   "linear-gradient(to top, rgba(24, 24, 27, 0.9), rgba(24, 24, 27, 1))",
-                paddingBottom: { xs: "1rem", lg: "2rem" },
-                paddingTop: { xs: "1rem",  lg: "2rem" },
+                paddingBottom: { xs: "1rem", lg: "1rem" },
+                paddingTop: { xs: "1rem" },
               }}
             >
               <Typography
@@ -188,6 +188,18 @@ const Page = () => {
               </IconButton>
             </Box>
 
+            <Typography
+              variant="body1"
+              sx={{
+                textAlign: { sm: "left", md: "justify" },
+                fontFamily: "monospace",
+              }}
+              className="font-mono text-pink-400"
+            >
+              {selectedProject.description.introduction}
+            </Typography>
+
+
             {selectedProject.link && (
               <Link
                 href={selectedProject.link}
@@ -203,16 +215,47 @@ const Page = () => {
               </Link>
             )}
 
-            <Typography
-              variant="body1"
-              sx={{
-                textAlign: { sm: "left", md: "justify" },
-                fontFamily: "monospace",
-              }}
-              className="font-mono text-pink-400"
-            >
-              {selectedProject.description.introduction}
-            </Typography>
+
+            {selectedProject.githubLink && (
+              <Link
+                href={selectedProject.githubLink}
+                underline="none"
+                target="_blank"
+                className="text-cyan-400"
+                sx={{
+                  fontFamily: "monospace",
+                  fontWeight: "bold",
+                  fontSize: "1.2rem",
+                }}
+              >
+                View on GitHub
+              </Link>
+            )}
+
+            {selectedProject.specialInfo && (
+              <ul className="list-disc ml-5 font-mono text-teal-400">
+                {selectedProject.specialInfo.map((info, index) => (
+                  <li key={index}>
+                    <Typography component="span" className="font-mono text-teal-400">
+                      {info.text}
+                      {info.link && (
+                        <>
+                          {" "}
+                          <a
+                            href={info.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-500 underline"
+                          >
+                            (Link)
+                          </a>
+                        </>
+                      )}
+                    </Typography>
+                  </li>
+                ))}
+              </ul>
+            )}
 
             {selectedProject.description.youTubeEmbedSrc && (
               <Box
@@ -281,21 +324,7 @@ const Page = () => {
                 </Box>
               )}
 
-            {selectedProject.githubLink && (
-              <Link
-                href={selectedProject.githubLink}
-                underline="none"
-                target="_blank"
-                className="text-cyan-400"
-                sx={{
-                  fontFamily: "monospace",
-                  fontWeight: "bold",
-                  fontSize: "1.2rem",
-                }}
-              >
-                View on GitHub
-              </Link>
-            )}
+            
 
             {selectedProject.techStack && (
               <p

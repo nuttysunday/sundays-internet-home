@@ -78,12 +78,17 @@ const projects = [
           { src: "/images/p_1.png", caption: "This is the screenshot from the paper used, of how to manage imbalance of data." },
           { src: "/images/p_2.png", caption: "This is the architecture of the complete model pipeline." }
         ],
-      specialInfo: ["It is also on:- https://paperswithcode.com/paper/protocol-based-deep-intrusion-detection-for"]  
     },
-      
     techStack:
       "Python, TensorFlow, LSTM, Deep Learning, Pandas, Numpy, Matplotlib, Sklearn",
-  },
+    specialInfo :[
+     { text: "It has 20 Stars on Github" },
+     { text: "Sole repository for the paper mentiond on paper with code", link:"https://paperswithcode.com/paper/protocol-based-deep-intrusion-detection-for"},
+     { text: "Based on a paper", link:"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9656911"}
+    ],
+  
+    },
+
   {
     title: "Image Colorization",
     date: "Sept 2021",
@@ -100,6 +105,10 @@ const projects = [
     githubLink:
       "https://colab.research.google.com/drive/1LHuboysL-nvAOni9WLAMekQEWJyjYQqX?usp=sharing",
     techStack: "Python, TensorFlow, Google Colab, CNN, Neural Networks",
+    specialInfo :[
+      { text: "Based on a paper", link:"https://iizuka.cs.tsukuba.ac.jp/projects/colorization/en/"},
+      { text: "Used Google Colab for training model"},
+     ],
   },
   {
     title: "Healthcare Chatbot",
