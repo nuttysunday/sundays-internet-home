@@ -199,7 +199,6 @@ const Page = () => {
               {selectedProject.description.introduction}
             </Typography>
 
-
             {selectedProject.link && (
               <Link
                 href={selectedProject.link}
@@ -214,7 +213,6 @@ const Page = () => {
                 {selectedProject.link.replace(/^https?:\/\//, "")}
               </Link>
             )}
-
 
             {selectedProject.githubLink && (
               <Link
@@ -233,10 +231,24 @@ const Page = () => {
             )}
 
             {selectedProject.specialInfo && (
-              <ul className="list-disc ml-5 font-mono text-teal-400">
+              <ul
+                style={{
+                  listStyleType: "disc",
+                  marginLeft: "20px",
+                  fontFamily: "monospace",
+                  color: "#38b2ac",
+                }}
+              >
                 {selectedProject.specialInfo.map((info, index) => (
                   <li key={index}>
-                    <Typography component="span" className="font-mono text-teal-400">
+                    <Typography
+                      component="span"
+                      sx={{
+                        fontFamily: "monospace",
+                        color: "#38b2ac",
+                        fontWeight: "bold",
+                      }}
+                    >
                       {info.text}
                       {info.link && (
                         <>
@@ -245,7 +257,10 @@ const Page = () => {
                             href={info.link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-500 underline"
+                            style={{
+                              color: "#3b82f6",
+                              textDecoration: "underline",
+                            }}
                           >
                             (Link)
                           </a>
@@ -323,8 +338,6 @@ const Page = () => {
                   ))}
                 </Box>
               )}
-
-            
 
             {selectedProject.techStack && (
               <p
