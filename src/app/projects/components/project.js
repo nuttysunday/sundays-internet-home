@@ -6,6 +6,7 @@ import FlipIcon from "@mui/icons-material/Flip";
 import SensorOccupiedIcon from "@mui/icons-material/SensorOccupied";
 import SportsTennisIcon from "@mui/icons-material/SportsTennis";
 import EdgesensorHighIcon from "@mui/icons-material/EdgesensorHigh";
+import SelfImprovementIcon from '@mui/icons-material/SelfImprovement';
 
 //https://github.com/PiyushCC/ai-image-enhancer-web-app
 
@@ -26,7 +27,7 @@ const projects = [
     logo: <LinuxIcon />,
     description: {
       introduction:
-        "This is still an ongoing project, this is my first open source project contribution",
+        "Update soon... This is still an ongoing project, this is my first open source project contribution. My role was to package this python repository in a library on Pypi so it could be easily distributed and imported by other users.",
     },
     techStack: "Python, Pypi",
   },
@@ -36,11 +37,26 @@ const projects = [
     date: "2024",
     logo: <EdgesensorHighIcon />,
     description: {
-      introduction: "Update soon...",
+      introduction: "Update soon... This is a full stack IoT based project, based on real-time data acquisition tool, and data pipeline setup for cleaning, parsing, and storing in database. The backend is powered by MySQL database, and Flask server is used to define restful API endpoints. The frontend is made using react and material UI and plotly for plotting graphs. The web app is hosted on Pi and containerized using Docker. Implemented socket server for displaying data in real-time for communication between frontend and backend.",
     },
     techStack:
       "Python, Flask, MySQL, Javascript, React, MaterialUI, Raspberry Pi, Docker, CI/CD Pipeline, Socket Programming [real-time data], Threading",
   },
+  ,
+  {
+    title: "Self hosting (Sunday's internet home",
+    link: "https://shivam.foo",
+    date: "2024",
+    logo: <SelfImprovementIcon />,
+    description: {
+      introduction:"The website you are currently seeing is hosted on Google Cloud Compute Engine, previously self hosted on Raspberry Pi, and I have also setup a CI/CD pipeline to reflect changes on the actual website in real-time. I don't care much about the developement side of this but self-hosting and pipeline is pretty cool."    },
+    techStack:
+      "NextJS (React), Deployed on Google Cloud previously (Raspberry Pi), Material UI, TailwindCSS, Docker, Docker Watchtower, CI/CD, Cloudflare Tunnel, SSH Setup, OpenVPN, Firewall Configuration, Shell Scripting",
+    githubLink: "https://github.com/nuttysunday/sundays-internet-home",
+    specialInfo :[
+      { text: "Currently hosted on Google Cloud (Previously on Raspberry Pi" },
+      { text: "Setup custom mail server using ImprovMX. So you can mail me on: mail@shivam.foo"},
+      { text: "Read about the blog on self-hosting and CI/CD pipeline:", link:"http://localhost:3000/blogs/self-hosting"}]  },
   {
     title: "Minimalistic News",
     link: "https://news.shivam.foo",
@@ -60,7 +76,7 @@ const projects = [
     date: "2024",
     logo: <SportsTennisIcon />,
     description: {
-      introduction: "Update soon...",
+      introduction: "Update soon...In this project, the objective was to develop a visualization system using raspberry pi and camera module, by using postprocessing technique, to track the fast paced ball using opencv, and estimate the distance at which ball has first point of ground contact after the ball has been thrown.",
     },
     techStack: "Python, OpenCV",
   },

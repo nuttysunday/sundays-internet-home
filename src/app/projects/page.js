@@ -102,7 +102,24 @@ const Page = () => {
                   >
                     {project.title}
                   </Typography>
+
+                  {project.link && (
+                    <Link
+                      href={project.link}
+                      underline="none"
+                      target="_blank"
+                      onClick={(event) => event.stopPropagation()}
+                      sx={{
+                        fontFamily: "monospace",
+                        fontWeight: "bold",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {project.link.replace(/^https?:\/\//, "")}
+                    </Link>
+                  )}
                 </Box>
+
                 <Typography
                   sx={{
                     position: "absolute",

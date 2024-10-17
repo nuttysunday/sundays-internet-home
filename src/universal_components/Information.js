@@ -6,7 +6,7 @@ const links = [
   { href: "https://github.com/nuttysunday", icon: GitHub, label: "GitHub" },
   { href: "https://www.linkedin.com/in/shivam-ghodke/", icon: LinkedIn, label: "LinkedIn" },
   { href: "mailto:mail@shivam.foo", icon: Email, label: "Email" },
-  { href: "https://docs.google.com/document/d/e/2PACX-1vT02vaxSFn4V0yvp61oHaj73079Y-VVu3jWX-DXa-69OOjcSHdLgowbyEShv6pVmVpNYPb4JpTsz8jg/pub", icon: Feed, label: "Resume" }
+  { href: "https://drive.google.com/file/d/1oiRDiDfy_RhmdgZE0C0CVOubbTuOliY5/view?usp=share_link", icon: Feed, label: "Resume" }
 ];
 
 const Information = ({ sx }) => (
