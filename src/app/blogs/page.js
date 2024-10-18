@@ -5,7 +5,7 @@ export default function BlogsPage() {
     <div>
       <ul>
         <li>
-          <Link href="/blogs/self-hosting" className="text-2xl font-bold underline decoration-sky-500">
+          <Link href="/blogs/self-hosting" className="text-2xl font-bold text-sky-400	">
             Self-hosting
           </Link>
         </li>

@@ -5,6 +5,9 @@ import "./globals.css";
 import Navbar from "@components/Navbar";
 import Information from "@components/Information";
 import { Box } from "@mui/material";
+import { ThemeProvider } from '@mui/material/styles';
+import theme from '../theme'; 
+
 
  const metadata = {
   title: "Shivam's Portfolio website",
@@ -71,14 +74,17 @@ const RootLayout = ({ children }) => {
                 xs: scrolling ? "0 15px 30px -15px rgba(255,255,255,0.4)" : "none",
                 lg: "none"
               },
+              
             }}
           >
             <Navbar />
             <Information />
           </Box>
-          <Box sx={{  padding: { xs: '1.2rem 1.2rem 0rem', md: '2rem 2rem 0rem' },position: "relative", zIndex: 1, textAlign:{xs:"left", md: "justify"}  , marginBottom:'4rem'}}>
+          <ThemeProvider theme={theme}>
+          <Box sx={{  padding: { xs: '1.2rem 1.2rem 0rem', md: '0rem 2rem 0rem' },position: "relative", zIndex: 1, textAlign:{xs:"left", md: "justify"}  , marginBottom:'4rem'}}>
             {children}
           </Box>
+          </ThemeProvider>
         </Box>
       </body>
     </html>
