@@ -4,7 +4,7 @@ import Link from "next/link";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 const SelfHostingPage = () => {
-  const commonTextStyle = "text-sky-400 text-left md:text-justify";
+  const commonTextStyle = "text-pink-400 text-left md:text-justify";
 
   return (
     <Box

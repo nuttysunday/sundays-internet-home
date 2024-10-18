@@ -7,7 +7,7 @@ export default function BlogsPage() {
         <li>
           <Link
             href="/blogs/self-hosting"
-            className="text-sky-400"
+            className="text-pink-400"
           >
             <div>
               {" "}
