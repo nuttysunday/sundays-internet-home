@@ -14,8 +14,11 @@
 
 body {
   @apply bg-zinc-900;
+  overflow-y: scroll; 
 }
 
 .main-content{
   border: 5px solid rebeccapurple;
 }
+
+

@@ -56,7 +56,7 @@ const projects = [
     specialInfo :[
       { text: "Currently hosted on Google Cloud (Previously on Raspberry Pi" },
       { text: "Setup custom mail server using ImprovMX. So you can mail me on: mail@shivam.foo"},
-      { text: "Read about the blog on self-hosting and CI/CD pipeline:", link:"http://localhost:3000/blogs/self-hosting"}]  },
+      { text: "Read about the blog on self-hosting and CI/CD pipeline:", link:"https://shivam.foo/blogs/self-hosting"}]  },
   {
     title: "Minimalistic News",
     link: "https://news.shivam.foo",

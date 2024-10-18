@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 
 const Navbar = ({ sx }) => {
   const pathname = usePathname();
+
   return (
     <Box
       sx={{
@@ -17,21 +18,30 @@ const Navbar = ({ sx }) => {
         justifyContent: { xs: "space-between" },
       }}
     >
-      {["ABOUT", "WORK", "SKILLS", "PROJECTS", "BLOGS"].map((item) => (
-        <Link href={item === "ABOUT" ? "/" : `/${item.toLowerCase()}`} passHref key={item}>
-          <Typography
-            sx={{
-              color: pathname === (item === "ABOUT" ? "/" : `/${item.toLowerCase()}`) ? "white" : undefined,
-              fontStyle: pathname === (item === "ABOUT" ? "/" : `/${item.toLowerCase()}`) ? "normal" : "italic",
-              padding: '0.5rem 0',
-              fontSize: { xs: '0.8rem', sm: '1rem' }, // Responsive font size
-              "&:hover": { color: "gray" },
-            }}
-          >
-            {item}
-          </Typography>
-        </Link>
-      ))}
+      {["ABOUT", "WORK", "SKILLS", "PROJECTS", "BLOGS"].map((item) => {
+        const itemPath = item === "ABOUT" ? "/" : `/${item.toLowerCase()}`;
+        
+        // Determine if the current link is active
+        const isActive =
+          (item === "ABOUT" && pathname === "/") ||
+          (item !== "ABOUT" && pathname.startsWith(itemPath));
+
+        return (
+          <Link href={itemPath} passHref key={item}>
+            <Typography
+              sx={{
+                color: isActive ? "white" : undefined,
+                fontStyle: isActive ? "normal" : "italic",
+                padding: '0.5rem 0',
+                fontSize: { xs: '0.8rem', sm: '1rem' },
+                "&:hover": { color: "gray" },
+              }}
+            >
+              {item}
+            </Typography>
+          </Link>
+        );
+      })}
     </Box>
   );
 };
