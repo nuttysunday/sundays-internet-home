@@ -15,7 +15,7 @@ const SelfHostingPage = () => {
         overflowX: "hidden",
       }}
     >
-      <Box >
+      <Box>
         <Link href="/blogs" passHref>
           <ArrowBackIcon
             sx={{
@@ -26,10 +26,10 @@ const SelfHostingPage = () => {
               },
               position: "absolute",
               left: "0rem",
-              marginTop:'1rem',
+              marginTop: "1rem",
               display: {
-                xs: 'none',
-                sm: 'block', 
+                xs: "none",
+                sm: "block",
               },
             }}
           />
@@ -96,6 +96,33 @@ const SelfHostingPage = () => {
           filter: "blur(2px)",
         }}
       />
+
+      <Box
+        sx={{
+          maxWidth: { xs: "90%", md: "600px" },
+          borderRadius: "12px",
+          overflow: "hidden",
+          margin: "0 auto",
+          minHeight: "215px",
+        }}
+      >
+        <iframe
+          src="https://www.youtube.com/embed/_IoQ6Dux8g8?si=uCX2zliGSLllFJTB"
+          allow="accelerometer; clipboard-write; encrypted-media"
+          title="YouTube video player"
+          style={{
+            width: "100%",
+            height: "215px",
+            border: "none",
+          }}
+        />
+      </Box>
+
+      <div className="flex flex-col items-center">
+        <p className={`${commonTextStyle} mt-2 text-white`}>
+          Youtube video showing live demo, of integrating hosting with CI/CD.
+        </p>
+      </div>
 
       <div className="flex flex-col items-center">
         <picture>

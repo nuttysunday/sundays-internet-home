@@ -49,7 +49,10 @@ const projects = [
     date: "2024",
     logo: <SelfImprovementIcon />,
     description: {
-      introduction:"The website you are currently seeing is hosted on Google Cloud Compute Engine, previously self hosted on Raspberry Pi, and I have also setup a CI/CD pipeline to reflect changes on the actual website in real-time. I don't care much about the developement side of this but self-hosting and pipeline is pretty cool."    },
+      introduction:"The website you are currently seeing is hosted on Google Cloud Compute Engine, previously self hosted on Raspberry Pi, and I have also setup a CI/CD pipeline to reflect changes on the actual website in real-time. I don't care much about the developement side of this but self-hosting and pipeline is pretty cool."   
+      ,youTubeEmbedSrc:
+      "https://www.youtube.com/embed/_IoQ6Dux8g8?si=uCX2zliGSLllFJTB",
+    },
     techStack:
       "NextJS (React), Deployed on Google Cloud previously (Raspberry Pi), Material UI, TailwindCSS, Docker, Docker Watchtower, CI/CD, Cloudflare Tunnel, SSH Setup, OpenVPN, Firewall Configuration, Shell Scripting",
     githubLink: "https://github.com/nuttysunday/sundays-internet-home",
