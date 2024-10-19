@@ -11,8 +11,8 @@ export default function BlogsPage() {
           >
             <div>
               {" "}
-              <p className={`text-2xl font-bold`}>Self-hosting</p>
-              <p className={`italic opacity-90 text-sm`}>18th Oct 2024, 6 min read</p>
+              <p className={`text-2xl font-bold underline decoration-4`}>Self-hosting</p>
+              <p className={`italic opacity-90 text-sm `}>18th Oct 2024, 6 min read</p>
             </div>
           </Link>
         </li>

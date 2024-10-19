@@ -35,7 +35,7 @@ const SelfHostingPage = () => {
           />
         </Link>
         <div>
-          <p className={`${commonTextStyle} text-2xl font-bold`}>
+          <p className={`${commonTextStyle} text-2xl font-bold underline decoration-4`}>
             Self-hosting
           </p>
           <p className={`${commonTextStyle} italic opacity-90 text-sm`}>
@@ -46,17 +46,17 @@ const SelfHostingPage = () => {
 
       <p className={commonTextStyle}>
         I am a <em>Full Stack Developer</em>, but still learning stuff and I
-        consider myself very naive, so please take this with a grain of salt.
+        consider myself naive, so please take this with a grain of salt.
       </p>
 
       <p className={`${commonTextStyle}`}>
-        Developing a web app is fun, writing UI, endpoints, designing database
-        schemas is very interesting and can be very enjoyable and a great
-        learning experience. But after you are done developing it locally how
-        would you showcase this to the internet or put it into an actual
-        production environment. I am obviously talking about very small systems
-        here less than 1k requests a day, where scalability is often not an
-        issue.
+        Developing a web app is fun, writing UI components, defining API endpoints,
+        and designing database schemas is very interesting and can be very
+        enjoyable and a great learning experience. But after you are done
+        developing it locally how would you showcase this to the internet or put
+        it into an actual production environment. I am obviously talking about
+        very small systems here &lt;1k requests a day, where scalability is
+        often not an issue.
       </p>
 
       <hr
@@ -119,7 +119,7 @@ const SelfHostingPage = () => {
       </Box>
 
       <div className="flex flex-col items-center">
-        <p className={`${commonTextStyle} mt-2 text-white`}>
+        <p className={`${commonTextStyle} text-white`}>
           Youtube video showing live demo, of integrating hosting with CI/CD.
         </p>
       </div>
@@ -146,7 +146,7 @@ const SelfHostingPage = () => {
           rel="noopener noreferrer"
           className="text-blue-400 underline"
         >
-          View the image in draw.io
+          View the HD image @draw.io
         </a>
       </div>
       <p className={`${commonTextStyle} text-2xl font-bold`}>
@@ -158,25 +158,25 @@ const SelfHostingPage = () => {
       </p>
       <p className={`${commonTextStyle}`}>
         Instead of directly exposing the IP address of your wifi or of your VPS,
-        I recommend to use a cloudflare tunnel, as it hides your IP address, and
-        protects for Ddos and dos attack out of the box, also gives features
-        like Geo fencing if necessary. And it is a free service, not necessary
-        to purchase domain names from them.
+        I recommend using a Cloudflare tunnel, as it hides your IP address,
+        protects for DDOS and DOS attack out of the box, also gives features
+        like Geo fencing if necessary. It is a free service, not necessary to
+        purchase domain names from them.
       </p>
 
       <p className={`${commonTextStyle} text-xl font-bold`}>2. Docker</p>
       <p className={`${commonTextStyle}`}>
         In methods 1 and 2, you need to dockerize your stuff which is easy for
         management, and push your code. Because, there could be a simple
-        dependency issue, for eg, you are using the mysql-connector library for
+        dependency issue, for eg, you are using the MySQL-connector library for
         your endpoints to interact with your database. But let’s say this
         library is not supported for a particular Linux Distro, this could
         result in changing the code and could be very annoying.
       </p>
       <p className={`${commonTextStyle}`}>
-        Or let’s say you need to use mysql server, if you don’t use docker you
+        Or let’s say you need to use a mysql server, if you don’t use docker you
         will need to download it, install it, configure it etc, but with docker
-        just pull mysql image, spin up the container and you have it ready.
+        just pull the mysql image, spin up the container and then you have it ready.
       </p>
       <p className={`${commonTextStyle}`}>
         So using docker, is like having a “small exact copy of a virtual
@@ -184,9 +184,9 @@ const SelfHostingPage = () => {
         machine”) run everywhere.
       </p>
       <p className={`${commonTextStyle}`}>
-        Another benefit is support of docker-compose, which can easily help you
-        manage multiple docker containers, and how they would interact with each
-        in its docker network.
+        Another benefit is the support of docker-compose, which can easily help
+        you manage multiple docker containers, and how they would interact with
+        each in its docker network.
       </p>
       <p className={`${commonTextStyle}`}>
         Make sure when you build the docker images, build and run them as the
@@ -198,17 +198,17 @@ const SelfHostingPage = () => {
       <p className={`${commonTextStyle} text-xl font-bold`}>
         3. Docker watchtower
       </p>
-      <p className={`${commonTextStyle}`}></p>
+
       <p className={`${commonTextStyle}`}>
-        Once you build and push the images to docker hub, they need to be
-        updated right on the server? So docker watchtower comes into play here.
-        Docker watchtower automatically pulls the images from dockerhub, and
+        Once you build and push the images to the docker hub, they need to be
+        updated on the server right? So Docker Watchtower comes into play here.
+        Docker Watchtower automatically pulls the images from the docker hub and
         rebuilds them automatically.
       </p>
       <p className={`${commonTextStyle}`}>
         And as we are using docker-compose, we can also smoothly integrate
-        docker watchtower in our containers. Make sure your repository on docker
-        hub is public so watchtower can pull the images.
+        docker watchtower in our containers. Make sure your repository on the
+        docker hub is public so Watchtower can pull the images.
       </p>
 
       <p className={`${commonTextStyle} text-xl font-bold`}>
@@ -264,7 +264,7 @@ const SelfHostingPage = () => {
           connect it with your tunnel.
         </p>
         <p className="text-base text-gray-800">
-          - Don’t share these credentials with anyone or they could spoof your
+          - Don’t share these credentials with anyone or anyone could spoof your
           tunnel.
         </p>
       </div>
@@ -288,7 +288,7 @@ const SelfHostingPage = () => {
       </p>
 
       <a
-        href="https://github.com/nuttysunday/sundays-internet-home/self-hosting-blogs-file/docker-compose.yml"
+        href="https://github.com/nuttysunday/sundays-internet-home/blob/main/self-hosting-blogs-file/docker-compose.yml"
         target="_blank"
         rel="noopener noreferrer"
         className="text-blue-400 underline"
@@ -461,9 +461,9 @@ watchtower:
         3. Additional Steps:-
       </p>
       <p className={`${commonTextStyle}`}>
-        When you build your next js app using github actions it takes up a lot
+        When you build your Next js app using GitHub actions it takes up a lot
         of time, This action, built the Next js app, created its image and
-        pushed to dockerhub.
+        pushed it to Dockerhub.
       </p>
       <div className="flex flex-col items-center">
         <img
@@ -472,16 +472,16 @@ watchtower:
           className="rounded-lg w-full"
         />
         <p className={`${commonTextStyle} mt-2 text-white`}>
-          Time for github actions to build the next js app, build and push the
-          image on dockerhube.
+          Time for Github actions to build the next js app, build and push the
+          image on Dockerhub.
         </p>
       </div>
       <p className={`${commonTextStyle}`}>
-        So i decide to use git pre-commit hooks, what this does it, builds the
-        Next js locally, creates docker image, spins up the container, and if
+        So I decided to use git pre-commit hooks, what this does is, build the
+        Next js app locally, create a docker image, spin up the container, and if
         you like it and everything looks fine, you enter “Y”, then it cleans up
-        the container, and add the build files and pushed it github, and the
-        github actions builds the container, and pushes to docker hub without
+        the container, and add the build files and pushed it GitHub, and the
+        GitHub actions builds the container, and pushes to docker hub without
         building next js app.
       </p>
       <p className={`${commonTextStyle}`}>
@@ -498,13 +498,13 @@ watchtower:
         </p>
       </div>
 
-      <p className={`${commonTextStyle} mt-2 text-white`}>
-        Here is the .git hooks precommit file: (Runs after you enter commit)
+      <p className={`${commonTextStyle} mt-2 text-white `}>
+        Here is the .git hooks precommit file, which runs after you enter commit 
         <a
-          href="https://github.com/nuttysunday/sundays-internet-home/self-hosting-blogs-file/pre_commit_script.sh"
+          href="https://github.com/nuttysunday/sundays-internet-home/blob/main/self-hosting-blogs-file/pre_commit_script.sh"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-400 underline"
+          className="text-blue-400 underline ml-2"
         >
           View the shell script
         </a>
@@ -513,16 +513,18 @@ watchtower:
       <p className={`${commonTextStyle} text-2xl font-bold`}>Method 3:-</p>
 
       <p className={`${commonTextStyle}`}>
-        1. No need to dockerize, no need to download mysql server or anything,
-        directly use vercel, which simply lets you deploy your NextJS app on it,
-        as it handles all the configuration underhood and you need not worry
-        about anything. Using vercel saves you a lot of time, and you need not
-        need to even create an account on Amazon and get your EC2 instance, or
-        dockerize any shit in the first place.
+        1. No need to dockerize, no need to setup CI/CD pipeline to build your
+        NextJS app or anything, directly use Vercel, which simply lets you
+        deploy your NextJS app on it, as it handles all the configuration
+        underhood and you need not worry about anything. Using Vercel saves you
+        a lot of time, and you need not need to even create an account on Amazon
+        and get your EC2 instance, or dockerize any shit in the first place. It
+        also comes out of the box with features like caching and DDOS attacks protection.
       </p>
       <p className={`${commonTextStyle}`}>
-        2. Using supabase for databases, this is like already having a mysql
-        server setup in the cloud for you, without you needing to do anything.
+        2. Using Supabase for databases is like already having a MySQL server
+        setup in the cloud for you, without you needing to do anything. Directly
+        gives you SDK to interact with the database reducing complexity.
       </p>
     </Box>
   );

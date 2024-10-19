@@ -1,12 +1,14 @@
 import * as React from "react";
 import { Box, Link, Tooltip } from "@mui/material";
 import { GitHub, LinkedIn, Email, Feed } from '@mui/icons-material';
+import XIcon from '@mui/icons-material/X';
 
 const links = [
   { href: "https://github.com/nuttysunday", icon: GitHub, label: "GitHub" },
   { href: "https://www.linkedin.com/in/shivam-ghodke/", icon: LinkedIn, label: "LinkedIn" },
   { href: "mailto:mail@shivam.foo", icon: Email, label: "Email" },
-  { href: "https://drive.google.com/file/d/1oiRDiDfy_RhmdgZE0C0CVOubbTuOliY5/view?usp=share_link", icon: Feed, label: "Resume" }
+  { href: "https://drive.google.com/file/d/1oiRDiDfy_RhmdgZE0C0CVOubbTuOliY5/view?usp=share_link", icon: Feed, label: "Resume" },
+  { href: "https://x.com/sundaycide", icon: XIcon, label: "Twitter" }
 ];
 
 const Information = ({ sx }) => (

@@ -1,12 +1,15 @@
 # Self Hosting- Sunday's Internet Home
 
-**Live Link**: [shivam.foo](https://shivam.foo)  
-**GitHub**: [nuttysunday/sundays-internet-home](https://github.com/nuttysunday/sundays-internet-home)
-**Blog Link**: [shivam.foo/blogs/self-hosting](https://shivam.foo/blogs/self-hosting)
-**Video Link**: [link](https://youtu.be/_IoQ6Dux8g8?si=CqIbvoVEVakvuekcg)
-**Linkdin**: [link](https://www.linkedin.com/in/shivam-ghodke/)
-**Resume**: [resume](https://drive.google.com/file/d/1oiRDiDfy_RhmdgZE0C0CVOubbTuOliY5/view)
-**Twitter**: [link](https://x.com/sundaycide)
+| **Description**   | **Link**                                                                                         |
+|-------------------|--------------------------------------------------------------------------------------------------|
+| **Live Link**     | [shivam.foo](https://shivam.foo)                                                                |
+| **GitHub**        | [nuttysunday/sundays-internet-home](https://github.com/nuttysunday/sundays-internet-home)       |
+| **Blog Link**     | [shivam.foo/blogs/self-hosting](https://shivam.foo/blogs/self-hosting)                          |
+| **Video Link**    | [Youtube Video](https://youtu.be/_IoQ6Dux8g8?si=CqIbvoVEVakvuekcg)                                     |
+| **LinkedIn**      | [Linkdin Profile](https://www.linkedin.com/in/shivam-ghodke/)                                             |
+| **Resume**        | [resume](https://drive.google.com/file/d/1oiRDiDfy_RhmdgZE0C0CVOubbTuOliY5/view)              |
+| **Twitter**       | [twitter account](https://x.com/sundaycide)                                                                |
+
 
 
 

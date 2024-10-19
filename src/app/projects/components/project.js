@@ -44,12 +44,12 @@ const projects = [
   },
   ,
   {
-    title: "Self hosting (Sunday's internet home",
+    title: "Self hosting [Sunday's internet home]",
     link: "https://shivam.foo",
     date: "2024",
     logo: <SelfImprovementIcon />,
     description: {
-      introduction:"The website you are currently seeing is hosted on Google Cloud Compute Engine, previously self hosted on Raspberry Pi, and I have also setup a CI/CD pipeline to reflect changes on the actual website in real-time. I don't care much about the developement side of this but self-hosting and pipeline is pretty cool."   
+      introduction:"The website you are currently seeing is hosted on Google Cloud Compute Engine, previously self hosted on Raspberry Pi, and I have also setup a CI/CD pipeline to reflect changes on the actual website in real-time. In this pipeline, before one commits the code, git pre-commit hook script runs building the Next Js image locally, building the docker image locally and spinning up the container, after user approval the container is taken down, and code is pushed to github, where github actions build and push the image to Dockerhub, and then on the remote server Docker watchtower, pulls the updated image and rebuilds the container, resulting in changes on the actual website. I don't care much about the developement side of this but self-hosting and pipeline is pretty cool."   
       ,youTubeEmbedSrc:
       "https://www.youtube.com/embed/_IoQ6Dux8g8?si=uCX2zliGSLllFJTB",
     },
@@ -57,7 +57,6 @@ const projects = [
       "NextJS (React), Deployed on Google Cloud previously (Raspberry Pi), Material UI, TailwindCSS, Docker, Docker Watchtower, CI/CD, Cloudflare Tunnel, SSH Setup, OpenVPN, Firewall Configuration, Shell Scripting",
     githubLink: "https://github.com/nuttysunday/sundays-internet-home",
     specialInfo :[
-      { text: "Currently hosted on Google Cloud (Previously on Raspberry Pi" },
       { text: "Setup custom mail server using ImprovMX. So you can mail me on: mail@shivam.foo"},
       { text: "Read about the blog on self-hosting and CI/CD pipeline:", link:"https://shivam.foo/blogs/self-hosting"}]  },
   {
