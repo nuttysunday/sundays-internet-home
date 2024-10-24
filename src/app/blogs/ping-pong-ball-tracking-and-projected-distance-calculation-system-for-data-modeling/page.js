@@ -4,6 +4,7 @@ import Link from "next/link";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import Image from 'next/image';
 
+// PING PONG BALL TRACKING & PROJECTED DISTANCE CALCULATION SYSTEM FOR DATA MODELING
 const SelfHostingPage = () => {
   const commonTextStyle = "text-sky-400 text-left md:text-justify";
 
@@ -39,7 +40,7 @@ const SelfHostingPage = () => {
           <p
             className={`${commonTextStyle} text-2xl font-bold underline decoration-4`}
           >
-            Ping-Pong ball tracking system
+            Ping-Pong ball tracking and projected distance calculation system for data modeling            
           </p>
           <p className={`${commonTextStyle} italic opacity-90 text-sm`}>
             28th Oct 2024, 5 min read
@@ -157,7 +158,7 @@ const SelfHostingPage = () => {
       </p>
 
       <div className="flex flex-col items-center mb-8 lg:mb-0">
-        <Image
+        <img
           src="/images/ping-pong-ball-tracking-system/objective.png"
           alt="Description of image"
           className="rounded-lg w-full max-w-[800px]"
@@ -175,7 +176,7 @@ const SelfHostingPage = () => {
       </p>
 
       <div className="flex flex-col items-center mb-8 lg:mb-0">
-        <Image
+        <img
           src="/images/ping-pong-ball-tracking-system/table.jpg"
           alt="Description of image"
           className="rounded-lg w-full max-w-[800px]"
@@ -198,7 +199,7 @@ const SelfHostingPage = () => {
       </p>
 
       <div className="flex flex-col items-center mb-8 lg:mb-0">
-        <Image
+        <img
           src="/images/ping-pong-ball-tracking-system/traditional.jpg"
           alt="Description of image"
           className="rounded-lg w-full max-w-[800px]"
@@ -222,7 +223,7 @@ const SelfHostingPage = () => {
       </p>
 
       <div className="flex flex-col items-center mb-8 lg:mb-0">
-        <Image
+        <img
           src="/images/ping-pong-ball-tracking-system/traditional.jpg"
           alt="Description of image"
           className="rounded-lg w-full max-w-[800px]"
@@ -231,7 +232,7 @@ const SelfHostingPage = () => {
       </div>
 
       <div className="flex flex-col items-center mb-8 lg:mb-0">
-        <Image
+        <img
           src="/images/ping-pong-ball-tracking-system/r_setup.jpg"
           alt="Description of image"
           className="rounded-lg w-full max-w-[800px]"
@@ -251,7 +252,7 @@ const SelfHostingPage = () => {
       </p>
 
       <div className="flex flex-col items-center mb-8 lg:mb-0">
-        <Image
+        <img
           src="/images/ping-pong-ball-tracking-system/calib_window.png"
           alt="Description of image"
           className="rounded-lg w-full max-w-[800px]"
@@ -276,7 +277,7 @@ const SelfHostingPage = () => {
 
       <div className="flex flex-col lg:flex-row lg:justify-center lg:space-x-8 items-center">
         <div className="flex flex-col items-center mb-8 lg:mb-0">
-          <Image
+          <img
             src="/images/ping-pong-ball-tracking-system/base_frame.png"
             alt="Description of image"
             className="rounded-lg w-full max-w-[400px]"
@@ -285,7 +286,7 @@ const SelfHostingPage = () => {
         </div>
 
         <div className="flex flex-col items-center">
-          <Image
+          <img
             src="/images/ping-pong-ball-tracking-system/bg_seperation.gif"
             alt="Description of image"
             className="rounded-lg max-w-[400px]"
@@ -298,7 +299,7 @@ const SelfHostingPage = () => {
 
       <div className="flex flex-col lg:flex-row lg:justify-center lg:space-x-8 items-center">
         <div className="flex flex-col items-center">
-          <Image
+          <img
             src="/images/ping-pong-ball-tracking-system/ball_tracked.png"
             alt="Description of image"
             className="rounded-lg max-w-[400px]"
@@ -307,7 +308,7 @@ const SelfHostingPage = () => {
         </div>
 
         <div className="flex flex-col items-center mb-8 lg:mb-0">
-          <Image
+          <img
             src="/images/ping-pong-ball-tracking-system/distance_output.png"
             alt="Description of image"
             className="rounded-lg w-full max-w-[400px]"
@@ -380,7 +381,7 @@ const SelfHostingPage = () => {
       </p>
 
       <div className="flex flex-col items-center mb-8 lg:mb-0">
-        <Image
+        <img
           src="/images/ping-pong-ball-tracking-system/comet_shape.jpeg"
           alt="Description of image"
           className="rounded-lg w-full max-w-[800px]"
@@ -421,7 +422,7 @@ const SelfHostingPage = () => {
 
       <div className="flex flex-col lg:flex-row lg:justify-center lg:space-x-8 items-center">
         <div className="flex flex-col items-center">
-          <Image
+          <img
             src="/images/ping-pong-ball-tracking-system/comet_in_gif_1.png"
             alt="Description of image"
             className="rounded-lg max-w-[400px]"
@@ -432,7 +433,7 @@ const SelfHostingPage = () => {
         </div>
 
         <div className="flex flex-col items-center mb-8 lg:mb-0">
-          <Image
+          <img
             src="/images/ping-pong-ball-tracking-system/comet_in_gif_2.png"
             alt="Description of image"
             className="rounded-lg w-full max-w-[400px]"
@@ -442,7 +443,7 @@ const SelfHostingPage = () => {
       </div>
 
       <div className="flex flex-col items-center mb-8 lg:mb-0">
-        <Image
+        <img
           src="/images/ping-pong-ball-tracking-system/ping_track.gif"
           alt="Description of image"
           className="rounded-lg w-full max-w-[800px]"
@@ -469,7 +470,7 @@ const SelfHostingPage = () => {
       </p>
 
       <div className="flex flex-col items-center mb-8 lg:mb-0">
-        <Image
+        <img
           src="/images/ping-pong-ball-tracking-system/distance_relative_1.png"
           alt="Description of image"
           className="rounded-lg w-full max-w-[800px]"
@@ -481,7 +482,7 @@ const SelfHostingPage = () => {
       </div>
 
       <div className="flex flex-col items-center mb-8 lg:mb-0">
-        <Image
+        <img
           src="/images/ping-pong-ball-tracking-system/distance_relative_2.png"
           alt="Description of image"
           className="rounded-lg w-full max-w-[800px]"
@@ -503,7 +504,7 @@ const SelfHostingPage = () => {
       </p>
 
       <div className="flex flex-col items-center mb-8 lg:mb-0">
-        <Image
+        <img
           src="/images/ping-pong-ball-tracking-system/distance_relative_4.png"
           alt="Description of image"
           className="rounded-lg w-full max-w-[800px]"

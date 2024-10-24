@@ -13,7 +13,7 @@ import Image from 'next/image';
 //https://github.com/PiyushCC/ai-image-enhancer-web-app
 
 const LinuxIcon = (props) => (
-  <Image
+  <img
     src="/linux.svg"
     alt="Custom Icon"
     {...props}
@@ -75,14 +75,17 @@ const projects = [
     githubLink: "https://github.com/nuttysunday/news",
   },
   {
-    title: "Projected Ball Distance",
+    title: "Ping-Pong ball tracking and projected distance calculation system for data modeling",
     githubLink: "https://github.com/wjasper/PingPongTracker",
+    specialInfo:[
+      { text: "Read about the blog on our visualization system:",  link:"https://shivam.foo/blogs/ping-pong-ball-tracking-and-projected-distance-calculation-system-for-data-modeling"},
+    ],
     date: "2024",
     logo: <SportsTennisIcon />,
     description: {
       introduction: "Update soon...In this project, the objective was to develop a visualization system using raspberry pi and camera module, by using postprocessing technique, to track the fast paced ball using opencv, and estimate the distance at which ball has first point of ground contact after the ball has been thrown.",
     },
-    techStack: "Python, OpenCV",
+    techStack: "Python, OpenCV, Raspberry Pi, PiCamera",
   },
 
   {

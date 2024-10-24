@@ -6,12 +6,12 @@ export default function BlogsPage() {
       <ul style={{ display: "flex", flexDirection:"column", gap:'1.5rem'}}>
       <li>
           <Link
-            href="/blogs/ping-pong-ball-tracking-system"
+            href="/blogs/ping-pong-ball-tracking-and-projected-distance-calculation-system-for-data-modeling"
             className="text-sky-400"
           >
             <div>
               {" "}
-              <p className={`text-2xl font-bold underline decoration-4`}>Ping-Pong ball tracking system</p>
+              <p className={`text-2xl font-bold underline decoration-4`}>Ping-Pong ball tracking and projected distance calculation system for data modeling</p>
               <p className={`italic opacity-90 text-sm `}>28th Oct 2024, 5 min read</p>
             </div>
           </Link>
