@@ -14,6 +14,8 @@ import CloseIcon from "@mui/icons-material/Close";
 import Tooltip from "@mui/material/Tooltip";
 import Fade from "@mui/material/Fade";
 import projects from "./components/project";
+import Image from 'next/image';
+
 
 const Page = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -332,7 +334,7 @@ const Page = () => {
                         width: "300px",
                       }}
                     >
-                      <img
+                      <Image
                         src={imgObj.src}
                         alt={`Project image ${index + 1}`}
                         style={{

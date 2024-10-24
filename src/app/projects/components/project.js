@@ -7,11 +7,13 @@ import SensorOccupiedIcon from "@mui/icons-material/SensorOccupied";
 import SportsTennisIcon from "@mui/icons-material/SportsTennis";
 import EdgesensorHighIcon from "@mui/icons-material/EdgesensorHigh";
 import SelfImprovementIcon from '@mui/icons-material/SelfImprovement';
+import Image from 'next/image';
+
 
 //https://github.com/PiyushCC/ai-image-enhancer-web-app
 
 const LinuxIcon = (props) => (
-  <img
+  <Image
     src="/linux.svg"
     alt="Custom Icon"
     {...props}

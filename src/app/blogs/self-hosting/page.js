@@ -2,6 +2,8 @@
 import { Box, Button } from "@mui/material";
 import Link from "next/link";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import Image from 'next/image';
+
 
 const SelfHostingPage = () => {
   const commonTextStyle = "text-pink-400 text-left md:text-justify";
@@ -130,7 +132,7 @@ const SelfHostingPage = () => {
             media="(max-width: 600px)"
             srcSet="/images/self-hosting/production.png"
           />
-          <img
+          <Image
             src="/images/self-hosting/production.svg"
             alt="Description of image"
             className="rounded-sm w-full"
@@ -370,7 +372,7 @@ watchtower:
       </ol>
 
       <div className="flex flex-col items-center mb-8 lg:mb-0">
-        <img
+        <Image
           src="/images/self-hosting/pi.jpg"
           alt="Description of image"
           className="rounded-lg w-full max-w-[400px]"
@@ -381,7 +383,7 @@ watchtower:
       <p className={`${commonTextStyle}`}>After having files on the server:-</p>
       <div className="flex flex-col lg:flex-row lg:justify-center lg:space-x-8 items-center">
         <div className="flex flex-col items-center mb-8 lg:mb-0">
-          <img
+          <Image
             src="/images/self-hosting/ssh_pi.jpg"
             alt="Description of image"
             className="rounded-lg w-full max-w-[400px]"
@@ -390,7 +392,7 @@ watchtower:
         </div>
 
         <div className="flex flex-col items-center">
-          <img
+          <Image
             src="/images/self-hosting/ssh_gc.png"
             alt="Description of image"
             className="rounded-lg max-w-[400px]"
@@ -441,7 +443,7 @@ watchtower:
       </p>
 
       <div className="flex flex-col items-center">
-        <img
+        <Image
           src="/images/self-hosting/firewall_config.jpg"
           alt="Description of image"
           className="rounded-lg w-full max-w-[400px]"
@@ -466,7 +468,7 @@ watchtower:
         pushed it to Dockerhub.
       </p>
       <div className="flex flex-col items-center">
-        <img
+        <Image
           src="/images/self-hosting/ci_cd_15.png"
           alt="Description of image"
           className="rounded-lg w-full"
@@ -488,7 +490,7 @@ watchtower:
         Reducing the build time to &lt;1min.{" "}
       </p>
       <div className="flex flex-col items-center">
-        <img
+        <Image
           src="/images/self-hosting/ci_cd_1.png"
           alt="Description of image"
           className="rounded-lg w-full"

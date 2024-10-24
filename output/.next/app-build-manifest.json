@@ -20,29 +20,54 @@
       "static/chunks/23-f5f819f656054356.js",
       "static/chunks/main-app-6af752caf62e832e.js",
       "static/css/e588391ba1a1e79e.css",
-      "static/css/68cef8b171ba9fef.css",
-      "static/chunks/467-0209e4efb2d5d7a5.js",
-      "static/chunks/231-8b6b665dad519162.js",
+      "static/css/53366762fd821467.css",
+      "static/chunks/123-5763273741b40460.js",
+      "static/chunks/231-f2776a8743eaa516.js",
       "static/chunks/174-3e6a25153a9a191d.js",
-      "static/chunks/app/layout-b6b862cb0fe97ac5.js"
+      "static/chunks/app/layout-1a90e1012280eb2d.js"
+    ],
+    "/blogs/certi-tester-web-app/page": [
+      "static/chunks/webpack-2b9fb6867f1b33aa.js",
+      "static/chunks/fd9d1056-858637d525bb3ac1.js",
+      "static/chunks/23-f5f819f656054356.js",
+      "static/chunks/main-app-6af752caf62e832e.js",
+      "static/chunks/123-5763273741b40460.js",
+      "static/chunks/231-f2776a8743eaa516.js",
+      "static/chunks/10-40d6703f678e539e.js",
+      "static/chunks/118-94405dbaa0bf7dc1.js",
+      "static/chunks/app/blogs/certi-tester-web-app/page-17985e5cb9640482.js"
     ],
     "/blogs/page": [
       "static/chunks/webpack-2b9fb6867f1b33aa.js",
       "static/chunks/fd9d1056-858637d525bb3ac1.js",
       "static/chunks/23-f5f819f656054356.js",
       "static/chunks/main-app-6af752caf62e832e.js",
-      "static/chunks/231-8b6b665dad519162.js",
-      "static/chunks/app/blogs/page-d78c5f8b72c00f78.js"
+      "static/chunks/231-f2776a8743eaa516.js",
+      "static/chunks/app/blogs/page-2cc07b9b91641ce5.js"
+    ],
+    "/blogs/ping-pong-ball-tracking-system/page": [
+      "static/chunks/webpack-2b9fb6867f1b33aa.js",
+      "static/chunks/fd9d1056-858637d525bb3ac1.js",
+      "static/chunks/23-f5f819f656054356.js",
+      "static/chunks/main-app-6af752caf62e832e.js",
+      "static/chunks/123-5763273741b40460.js",
+      "static/chunks/231-f2776a8743eaa516.js",
+      "static/chunks/10-40d6703f678e539e.js",
+      "static/chunks/173-fcd2d7ac65048d0f.js",
+      "static/chunks/118-94405dbaa0bf7dc1.js",
+      "static/chunks/app/blogs/ping-pong-ball-tracking-system/page-3882de089e65b44e.js"
     ],
     "/blogs/self-hosting/page": [
       "static/chunks/webpack-2b9fb6867f1b33aa.js",
       "static/chunks/fd9d1056-858637d525bb3ac1.js",
       "static/chunks/23-f5f819f656054356.js",
       "static/chunks/main-app-6af752caf62e832e.js",
-      "static/chunks/467-0209e4efb2d5d7a5.js",
-      "static/chunks/231-8b6b665dad519162.js",
+      "static/chunks/123-5763273741b40460.js",
+      "static/chunks/231-f2776a8743eaa516.js",
       "static/chunks/10-40d6703f678e539e.js",
-      "static/chunks/app/blogs/self-hosting/page-6ddfbf9f41080f05.js"
+      "static/chunks/173-fcd2d7ac65048d0f.js",
+      "static/chunks/118-94405dbaa0bf7dc1.js",
+      "static/chunks/app/blogs/self-hosting/page-f2d328b546064f34.js"
     ],
     "/page": [
       "static/chunks/webpack-2b9fb6867f1b33aa.js",
@@ -56,11 +81,12 @@
       "static/chunks/fd9d1056-858637d525bb3ac1.js",
       "static/chunks/23-f5f819f656054356.js",
       "static/chunks/main-app-6af752caf62e832e.js",
-      "static/chunks/467-0209e4efb2d5d7a5.js",
-      "static/chunks/174-3e6a25153a9a191d.js",
+      "static/chunks/123-5763273741b40460.js",
       "static/chunks/10-40d6703f678e539e.js",
-      "static/chunks/850-f5b3742d0ae4bbe6.js",
-      "static/chunks/app/projects/page-78976b933a393b8f.js"
+      "static/chunks/173-fcd2d7ac65048d0f.js",
+      "static/chunks/174-3e6a25153a9a191d.js",
+      "static/chunks/443-195d7a517bfc766a.js",
+      "static/chunks/app/projects/page-e11ed42dc27f1849.js"
     ],
     "/skills/page": [
       "static/chunks/webpack-2b9fb6867f1b33aa.js",
