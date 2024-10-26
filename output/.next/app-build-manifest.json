@@ -20,23 +20,11 @@
       "static/chunks/23-f5f819f656054356.js",
       "static/chunks/main-app-6af752caf62e832e.js",
       "static/css/e588391ba1a1e79e.css",
-      "static/css/53366762fd821467.css",
+      "static/css/d1001c2721107759.css",
       "static/chunks/123-5763273741b40460.js",
       "static/chunks/231-f2776a8743eaa516.js",
       "static/chunks/174-3e6a25153a9a191d.js",
       "static/chunks/app/layout-1a90e1012280eb2d.js"
-    ],
-    "/blogs/ping-pong-ball-tracking-and-projected-distance-calculation-system-for-data-modeling/page": [
-      "static/chunks/webpack-2b9fb6867f1b33aa.js",
-      "static/chunks/fd9d1056-858637d525bb3ac1.js",
-      "static/chunks/23-f5f819f656054356.js",
-      "static/chunks/main-app-6af752caf62e832e.js",
-      "static/chunks/123-5763273741b40460.js",
-      "static/chunks/231-f2776a8743eaa516.js",
-      "static/chunks/10-40d6703f678e539e.js",
-      "static/chunks/173-fcd2d7ac65048d0f.js",
-      "static/chunks/118-94405dbaa0bf7dc1.js",
-      "static/chunks/app/blogs/ping-pong-ball-tracking-and-projected-distance-calculation-system-for-data-modeling/page-90d85ac03901bc70.js"
     ],
     "/blogs/certi-tester-web-app/page": [
       "static/chunks/webpack-2b9fb6867f1b33aa.js",
@@ -47,14 +35,7 @@
       "static/chunks/231-f2776a8743eaa516.js",
       "static/chunks/10-40d6703f678e539e.js",
       "static/chunks/118-94405dbaa0bf7dc1.js",
-      "static/chunks/app/blogs/certi-tester-web-app/page-17985e5cb9640482.js"
-    ],
-    "/page": [
-      "static/chunks/webpack-2b9fb6867f1b33aa.js",
-      "static/chunks/fd9d1056-858637d525bb3ac1.js",
-      "static/chunks/23-f5f819f656054356.js",
-      "static/chunks/main-app-6af752caf62e832e.js",
-      "static/chunks/app/page-c7b54bbaa49bb155.js"
+      "static/chunks/app/blogs/certi-tester-web-app/page-1a051ef80826ed37.js"
     ],
     "/blogs/page": [
       "static/chunks/webpack-2b9fb6867f1b33aa.js",
@@ -64,6 +45,18 @@
       "static/chunks/231-f2776a8743eaa516.js",
       "static/chunks/app/blogs/page-2cc07b9b91641ce5.js"
     ],
+    "/blogs/ping-pong-ball-tracking-and-projected-distance-calculation-system-for-data-modeling/page": [
+      "static/chunks/webpack-2b9fb6867f1b33aa.js",
+      "static/chunks/fd9d1056-858637d525bb3ac1.js",
+      "static/chunks/23-f5f819f656054356.js",
+      "static/chunks/main-app-6af752caf62e832e.js",
+      "static/chunks/123-5763273741b40460.js",
+      "static/chunks/231-f2776a8743eaa516.js",
+      "static/chunks/10-40d6703f678e539e.js",
+      "static/chunks/118-94405dbaa0bf7dc1.js",
+      "static/chunks/173-fcd2d7ac65048d0f.js",
+      "static/chunks/app/blogs/ping-pong-ball-tracking-and-projected-distance-calculation-system-for-data-modeling/page-a01e26444a416bec.js"
+    ],
     "/blogs/self-hosting/page": [
       "static/chunks/webpack-2b9fb6867f1b33aa.js",
       "static/chunks/fd9d1056-858637d525bb3ac1.js",
@@ -72,9 +65,15 @@
       "static/chunks/123-5763273741b40460.js",
       "static/chunks/231-f2776a8743eaa516.js",
       "static/chunks/10-40d6703f678e539e.js",
-      "static/chunks/173-fcd2d7ac65048d0f.js",
       "static/chunks/118-94405dbaa0bf7dc1.js",
-      "static/chunks/app/blogs/self-hosting/page-61b3fa9748227113.js"
+      "static/chunks/app/blogs/self-hosting/page-a52ffcd808dfc7e7.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-2b9fb6867f1b33aa.js",
+      "static/chunks/fd9d1056-858637d525bb3ac1.js",
+      "static/chunks/23-f5f819f656054356.js",
+      "static/chunks/main-app-6af752caf62e832e.js",
+      "static/chunks/app/page-c7b54bbaa49bb155.js"
     ],
     "/projects/page": [
       "static/chunks/webpack-2b9fb6867f1b33aa.js",
@@ -83,10 +82,10 @@
       "static/chunks/main-app-6af752caf62e832e.js",
       "static/chunks/123-5763273741b40460.js",
       "static/chunks/10-40d6703f678e539e.js",
-      "static/chunks/173-fcd2d7ac65048d0f.js",
       "static/chunks/174-3e6a25153a9a191d.js",
-      "static/chunks/443-febc176128c251a4.js",
-      "static/chunks/app/projects/page-f80ad31b34f395cc.js"
+      "static/chunks/173-fcd2d7ac65048d0f.js",
+      "static/chunks/443-f175b9a7df5002f9.js",
+      "static/chunks/app/projects/page-e26731fe19b9fcb9.js"
     ],
     "/skills/page": [
       "static/chunks/webpack-2b9fb6867f1b33aa.js",

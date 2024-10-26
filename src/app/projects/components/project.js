@@ -23,9 +23,25 @@ const LinuxIcon = (props) => (
 
 const projects = [
   {
+    title: "Ping-Pong ball tracking and projected distance calculation system for data modeling",
+    githubLink: "https://github.com/wjasper/PingPongTracker",
+    specialInfo:[
+      { text: "Read about the blog on our visualization system:",  link:"https://textiles.ncsu.edu/people/wjasper/"},
+      { text: "Project in collaboration with Dr. Warren Jasper",  link:"https://shivam.foo/blogs/ping-pong-ball-tracking-and-projected-distance-calculation-system-for-data-modeling"},
+
+    ],
+    date: "July 2024",
+    logo: <SportsTennisIcon />,
+    description: {
+      introduction: "I am truly grateful to Dr. Warren Jasper for giving me the opportunity to work on a project that interacts with real-world conditions. It has been quite a challenging journey, but after weeks of effort, we were able to produce results that truly matter, and were acurate upto quarter of an inch. Using our visualization system consisting of a Raspberry Pi, HD camera, and power bank, we were able to accurately track and calculate projected distances using our Python program. We implemented techniques such as post-processing, background separation, calibration, and contour detection using threshold area and aspect ratio. This approach allows us to convert the coordinates into distances measured in inches.",
+      youTubeEmbedSrc:"https://www.youtube.com/embed/N7TDCUCSW0k?si=hrYcrrFfqz_ToVoW",
+    },
+    techStack: "Python, OpenCV, Raspberry Pi, PiCamera",
+  },
+  {
     title: "Python Package for MCC Linux Drivers [Contribution to Open Source]",
     githubLink: "https://github.com/nuttysunday/Linux_Drivers",
-    date: "2024",
+    date: "Ongoing 2024",
     logo: <LinuxIcon />,
     description: {
       introduction:
@@ -36,7 +52,7 @@ const projects = [
   {
     title: "Certi Tester Full Stack Web App",
     githubLink: "https://github.com/wjasper/certi-tester-deployment",
-    date: "2024",
+    date: "Ongoing 2024",
     logo: <EdgesensorHighIcon />,
     description: {
       introduction: "Update soon... This is a full stack IoT based project, based on real-time data acquisition tool, and data pipeline setup for cleaning, parsing, and storing in database. The backend is powered by MySQL database, and Flask server is used to define restful API endpoints. The frontend is made using react and material UI and plotly for plotting graphs. The web app is hosted on Pi and containerized using Docker. Implemented socket server for displaying data in real-time for communication between frontend and backend.",
@@ -48,7 +64,7 @@ const projects = [
   {
     title: "Self hosting [Sunday's internet home]",
     link: "https://shivam.foo",
-    date: "2024",
+    date: "Sept 2024",
     logo: <SelfImprovementIcon />,
     description: {
       introduction:"The website you are currently seeing is hosted on Google Cloud Compute Engine, previously self hosted on Raspberry Pi, and I have also setup a CI/CD pipeline to reflect changes on the actual website in real-time. In this pipeline, before one commits the code, git pre-commit hook script runs building the Next Js image locally, building the docker image locally and spinning up the container, after user approval the container is taken down, and code is pushed to github, where github actions build and push the image to Dockerhub, and then on the remote server Docker watchtower, pulls the updated image and rebuilds the container, resulting in changes on the actual website. I don't care much about the developement side of this but self-hosting and pipeline is pretty cool."   
@@ -74,19 +90,7 @@ const projects = [
       "NextJS (React), Deployed on Vercel, Material UI, TailwindCSS, NewsAPI",
     githubLink: "https://github.com/nuttysunday/news",
   },
-  {
-    title: "Ping-Pong ball tracking and projected distance calculation system for data modeling",
-    githubLink: "https://github.com/wjasper/PingPongTracker",
-    specialInfo:[
-      { text: "Read about the blog on our visualization system:",  link:"https://shivam.foo/blogs/ping-pong-ball-tracking-and-projected-distance-calculation-system-for-data-modeling"},
-    ],
-    date: "2024",
-    logo: <SportsTennisIcon />,
-    description: {
-      introduction: "Update soon...In this project, the objective was to develop a visualization system using raspberry pi and camera module, by using postprocessing technique, to track the fast paced ball using opencv, and estimate the distance at which ball has first point of ground contact after the ball has been thrown.",
-    },
-    techStack: "Python, OpenCV, Raspberry Pi, PiCamera",
-  },
+  
 
   {
     title: "Protocol-Based Deep Intrusion Detection for DoS and DDoS Attacks",

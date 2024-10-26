@@ -334,7 +334,7 @@ const Page = () => {
                         width: "300px",
                       }}
                     >
-                      <Image
+                      <img
                         src={imgObj.src}
                         alt={`Project image ${index + 1}`}
                         style={{

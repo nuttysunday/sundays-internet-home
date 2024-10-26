@@ -2,8 +2,6 @@
 import { Box, Button } from "@mui/material";
 import Link from "next/link";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import Image from 'next/image';
-
 
 const SelfHostingPage = () => {
   const commonTextStyle = "text-pink-400 text-left md:text-justify";
@@ -37,7 +35,9 @@ const SelfHostingPage = () => {
           />
         </Link>
         <div>
-          <p className={`${commonTextStyle} text-2xl font-bold underline decoration-4`}>
+          <p
+            className={`${commonTextStyle} text-2xl font-bold underline decoration-4`}
+          >
             Self-hosting
           </p>
           <p className={`${commonTextStyle} italic opacity-90 text-sm`}>
@@ -46,15 +46,24 @@ const SelfHostingPage = () => {
         </div>
       </Box>
 
+      <a
+        href="https://github.com/nuttysunday/sundays-internet-home"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-white text-lg font-bold underline"
+      >
+        View on Github
+      </a>
+
       <p className={commonTextStyle}>
         I am a <em>Full Stack Developer</em>, but still learning stuff and I
         consider myself naive, so please take this with a grain of salt.
       </p>
 
       <p className={`${commonTextStyle}`}>
-        Developing a web app is fun, writing UI components, defining API endpoints,
-        and designing database schemas is very interesting and can be very
-        enjoyable and a great learning experience. But after you are done
+        Developing a web app is fun, writing UI components, defining API
+        endpoints, and designing database schemas is very interesting and can be
+        very enjoyable and a great learning experience. But after you are done
         developing it locally how would you showcase this to the internet or put
         it into an actual production environment. I am obviously talking about
         very small systems here &lt;1k requests a day, where scalability is
@@ -99,26 +108,18 @@ const SelfHostingPage = () => {
         }}
       />
 
-      <Box
-        sx={{
-          maxWidth: { xs: "90%", md: "600px" },
-          borderRadius: "12px",
-          overflow: "hidden",
-          margin: "0 auto",
-          minHeight: "215px",
-        }}
-      >
-        <iframe
-          src="https://www.youtube.com/embed/_IoQ6Dux8g8?si=uCX2zliGSLllFJTB"
-          allow="accelerometer; clipboard-write; encrypted-media"
-          title="YouTube video player"
-          style={{
-            width: "100%",
-            height: "215px",
-            border: "none",
-          }}
-        />
-      </Box>
+      <div class="flex items-center justify-center">
+        <div class="w-300px sm:w-[1000px] h-[225px] sm:h-[500px] overflow-hidden rounded-2xl">
+          <iframe
+            class="w-full h-full"
+            src="https://www.youtube.com/embed/_IoQ6Dux8g8?si=uCX2zliGSLllFJTB"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
 
       <div className="flex flex-col items-center">
         <p className={`${commonTextStyle} text-white`}>
@@ -132,7 +133,7 @@ const SelfHostingPage = () => {
             media="(max-width: 600px)"
             srcSet="/images/self-hosting/production.png"
           />
-          <Image
+          <img
             src="/images/self-hosting/production.svg"
             alt="Description of image"
             className="rounded-sm w-full"
@@ -178,7 +179,8 @@ const SelfHostingPage = () => {
       <p className={`${commonTextStyle}`}>
         Or let’s say you need to use a mysql server, if you don’t use docker you
         will need to download it, install it, configure it etc, but with docker
-        just pull the mysql image, spin up the container and then you have it ready.
+        just pull the mysql image, spin up the container and then you have it
+        ready.
       </p>
       <p className={`${commonTextStyle}`}>
         So using docker, is like having a “small exact copy of a virtual
@@ -372,7 +374,7 @@ watchtower:
       </ol>
 
       <div className="flex flex-col items-center mb-8 lg:mb-0">
-        <Image
+        <img
           src="/images/self-hosting/pi.jpg"
           alt="Description of image"
           className="rounded-lg w-full max-w-[400px]"
@@ -383,7 +385,7 @@ watchtower:
       <p className={`${commonTextStyle}`}>After having files on the server:-</p>
       <div className="flex flex-col lg:flex-row lg:justify-center lg:space-x-8 items-center">
         <div className="flex flex-col items-center mb-8 lg:mb-0">
-          <Image
+          <img
             src="/images/self-hosting/ssh_pi.jpg"
             alt="Description of image"
             className="rounded-lg w-full max-w-[400px]"
@@ -392,7 +394,7 @@ watchtower:
         </div>
 
         <div className="flex flex-col items-center">
-          <Image
+          <img
             src="/images/self-hosting/ssh_gc.png"
             alt="Description of image"
             className="rounded-lg max-w-[400px]"
@@ -443,7 +445,7 @@ watchtower:
       </p>
 
       <div className="flex flex-col items-center">
-        <Image
+        <img
           src="/images/self-hosting/firewall_config.jpg"
           alt="Description of image"
           className="rounded-lg w-full max-w-[400px]"
@@ -468,7 +470,7 @@ watchtower:
         pushed it to Dockerhub.
       </p>
       <div className="flex flex-col items-center">
-        <Image
+        <img
           src="/images/self-hosting/ci_cd_15.png"
           alt="Description of image"
           className="rounded-lg w-full"
@@ -480,9 +482,9 @@ watchtower:
       </div>
       <p className={`${commonTextStyle}`}>
         So I decided to use git pre-commit hooks, what this does is, build the
-        Next js app locally, create a docker image, spin up the container, and if
-        you like it and everything looks fine, you enter “Y”, then it cleans up
-        the container, and add the build files and pushed it GitHub, and the
+        Next js app locally, create a docker image, spin up the container, and
+        if you like it and everything looks fine, you enter “Y”, then it cleans
+        up the container, and add the build files and pushed it GitHub, and the
         GitHub actions builds the container, and pushes to docker hub without
         building next js app.
       </p>
@@ -490,7 +492,7 @@ watchtower:
         Reducing the build time to &lt;1min.{" "}
       </p>
       <div className="flex flex-col items-center">
-        <Image
+        <img
           src="/images/self-hosting/ci_cd_1.png"
           alt="Description of image"
           className="rounded-lg w-full"
@@ -501,7 +503,7 @@ watchtower:
       </div>
 
       <p className={`${commonTextStyle} mt-2 text-white `}>
-        Here is the .git hooks precommit file, which runs after you enter commit 
+        Here is the .git hooks precommit file, which runs after you enter commit
         <a
           href="https://github.com/nuttysunday/sundays-internet-home/blob/main/self-hosting-blogs-file/pre_commit_script.sh"
           target="_blank"
@@ -521,7 +523,8 @@ watchtower:
         underhood and you need not worry about anything. Using Vercel saves you
         a lot of time, and you need not need to even create an account on Amazon
         and get your EC2 instance, or dockerize any shit in the first place. It
-        also comes out of the box with features like caching and DDOS attacks protection.
+        also comes out of the box with features like caching and DDOS attacks
+        protection.
       </p>
       <p className={`${commonTextStyle}`}>
         2. Using Supabase for databases is like already having a MySQL server
