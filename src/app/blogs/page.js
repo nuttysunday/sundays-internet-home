@@ -6,6 +6,18 @@ export default function BlogsPage() {
       <ul style={{ display: "flex", flexDirection:"column", gap:'1.5rem'}}>
       <li>
           <Link
+            href="/blogs/cool-kubernetes"
+            className="text-orange-400"
+          >
+            <div>
+              {" "}
+              <p className={`text-2xl font-bold underline decoration-4`}>Cool kubernetes</p>
+              <p className={`italic opacity-90 text-sm `}>20th Nov 2024, 8 min read</p>
+            </div>
+          </Link>
+        </li>
+      <li>
+          <Link
             href="/blogs/ping-pong-ball-tracking-and-projected-distance-calculation-system-for-data-modeling"
             className="text-sky-400"
           >
@@ -37,7 +49,7 @@ export default function BlogsPage() {
             <div>
               {" "}
               <p className={`text-2xl font-bold underline decoration-4`}>Certi Tester web app</p>
-              <p className={`italic opacity-90 text-sm `}>Coming mid Nov</p>
+              <p className={`italic opacity-90 text-sm `}>Coming mid Jan 2025</p>
             </div>
           </Link>
         </li>

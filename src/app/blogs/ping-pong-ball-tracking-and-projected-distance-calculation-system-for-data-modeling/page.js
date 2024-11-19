@@ -7,6 +7,8 @@ import Image from "next/image";
 // PING PONG BALL TRACKING & PROJECTED DISTANCE CALCULATION SYSTEM FOR DATA MODELING
 const SelfHostingPage = () => {
   const commonTextStyle = "text-sky-400 text-left md:text-justify";
+  const tableStyle = `${commonTextStyle} border border-gray-400 px-4 py-2`;
+
 
   return (
     <Box
@@ -74,19 +76,18 @@ const SelfHostingPage = () => {
         results in real-world conditons by automating manual tasks.
       </p>
 
-      <div class="flex items-center justify-center">
-        <div class="w-300px sm:w-[1000px] h-[225px] sm:h-[500px] overflow-hidden rounded-2xl">
+      <div className="flex items-center justify-center">
+        <div className="w-300px sm:w-[1000px] h-[225px] sm:h-[500px] overflow-hidden rounded-2xl">
           <iframe
-            class="w-full h-full"
+            className="w-full h-full"
             src="https://www.youtube.com/embed/N7TDCUCSW0k?si=hrYcrrFfqz_ToVoW"
             title="YouTube video player"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
       </div>
- 
+
       <div className="flex flex-col items-center">
         <p className={`${commonTextStyle} text-white`}>
           Youtube video showing the comparison of traditional vs. our approach,
@@ -139,11 +140,11 @@ const SelfHostingPage = () => {
                   <span className="underline">Challenges we faced</span>
                 </Link>
                 <ul style={{ paddingLeft: "20px" }}>
-                <li>
+                  <li>
                     <Link href="#picamera">
                       <span>4.3.1 </span>
                       <span className="underline">
-                      OpenCV not compatible with Raspberry Pi camera
+                        OpenCV not compatible with Raspberry Pi camera
                       </span>
                     </Link>
                   </li>
@@ -193,8 +194,8 @@ const SelfHostingPage = () => {
         1. Understanding the project:-
       </p>
       <p className={`${commonTextStyle}`}>
-        Calculating the distance at which the ball is going to have its first point
-        of contact with the ground after being launched using a catapult.
+        Calculating the distance at which the ball is going to have its first
+        point of contact with the ground after being launched using a catapult.
       </p>
 
       <div className="flex flex-col items-center mb-8 lg:mb-0">
@@ -236,7 +237,10 @@ const SelfHostingPage = () => {
       </p>
 
       <p className={`${commonTextStyle}`}>
-      Lay aluminium foil in the expected area where the ball is going to land for a particular configuration, launch the ball, identify the dent on the foil, and calculate the distance using the measuring tape placed parallel with the foil.
+        Lay aluminium foil in the expected area where the ball is going to land
+        for a particular configuration, launch the ball, identify the dent on
+        the foil, and calculate the distance using the measuring tape placed
+        parallel with the foil.
       </p>
 
       <div className="flex flex-col items-center mb-8 lg:mb-0">
@@ -251,7 +255,8 @@ const SelfHostingPage = () => {
       </div>
 
       <p className={`${commonTextStyle}`}>
-      This is a tedious process that takes a lot of time. It is a two-man job, and it is not feasible when sampling 10,000 data points.
+        This is a tedious process that takes a lot of time. It is a two-man job,
+        and it is not feasible when sampling 10,000 data points.
       </p>
 
       <p id="our-method" className={`${commonTextStyle} text-xl font-bold`}>
@@ -259,7 +264,9 @@ const SelfHostingPage = () => {
       </p>
 
       <p className={`${commonTextStyle}`}>
-      Using a Raspberry Pi with an HD camera mounted on it, powered by a power bank, can be operated using a remote desktop making the system very mobile. Place Raspberry Pi camera as shown in the picture below.
+        Using a Raspberry Pi with an HD camera mounted on it, powered by a power
+        bank, can be operated using a remote desktop making the system very
+        mobile. Place Raspberry Pi camera as shown in the picture below.
       </p>
 
       <div className="flex flex-col items-center mb-8 lg:mb-0">
@@ -312,11 +319,11 @@ const SelfHostingPage = () => {
       </p>
 
       <p className={`${commonTextStyle}`}>
-      So after weeks of research, trials and errors, after losing all hope and
- were almost about to scrap the project, my professor came up with a
- brilliant idea. Background separations:- So what we do is take the
- the first frame, convert it to b&w, and for each frame, we take the absolute
- the difference with this bg_image.
+        So after weeks of research, trials and errors, after losing all hope and
+        were almost about to scrap the project, my professor came up with a
+        brilliant idea. Background separations:- So what we do is take the the
+        first frame, convert it to b&w, and for each frame, we take the absolute
+        the difference with this bg_image.
       </p>
 
       <div className="flex flex-col lg:flex-row lg:justify-center lg:space-x-8 items-center">
@@ -351,7 +358,10 @@ const SelfHostingPage = () => {
           <p className={`${commonTextStyle} mt-4 text-white`}>Ball tracked</p>
         </div>
 
-        <div id="distance-output" className="flex flex-col items-center mb-8 lg:mb-0">
+        <div
+          id="distance-output"
+          className="flex flex-col items-center mb-8 lg:mb-0"
+        >
           <img
             src="/images/ping-pong-ball-tracking-system/distance_output.png"
             alt="Description of image"
@@ -374,14 +384,19 @@ const SelfHostingPage = () => {
         4.3.1 OpenCV not compatible with Raspberry Pi camera
       </p>
       <p className={`${commonTextStyle}`}>
-        First challenge, we faced was opencv library is not compatible with the Raspberry Pi camera, and thus have to use Picamera library to get camera object. Also we were getting very low fps, and had to increase it by trying out various Picamera techniques. 
+        First challenge, we faced was opencv library is not compatible with the
+        Raspberry Pi camera, and thus have to use Picamera library to get camera
+        object. Also we were getting very low fps, and had to increase it by
+        trying out various Picamera techniques.
       </p>
 
-      <p id="#real-time"  className={`${commonTextStyle} text font-bold`}>
+      <p id="#real-time" className={`${commonTextStyle} text font-bold`}>
         4.3.2 Hardware limitation for processing in real-time
       </p>
       <p className={`${commonTextStyle}`}>
-      We initially wanted to do this in real-time, but because of hardware limitations, the Pi was not able to process the frames as soon as it received them. 
+        We initially wanted to do this in real-time, but because of hardware
+        limitations, the Pi was not able to process the frames as soon as it
+        received them.
       </p>
 
       <p className={`${commonTextStyle}`}>
@@ -394,7 +409,9 @@ const SelfHostingPage = () => {
       </p>
 
       <p className={`${commonTextStyle}`}>
-      The second problem we faced was that the ball was moving at a very high pace, which was visible maybe for 1-3 frames, and the program was not able to do any object detection.
+        The second problem we faced was that the ball was moving at a very high
+        pace, which was visible maybe for 1-3 frames, and the program was not
+        able to do any object detection.
       </p>
       <p className={`${commonTextStyle}`}>
         So we even tried using a plain dark color background, covered using a
@@ -403,17 +420,17 @@ const SelfHostingPage = () => {
       </p>
       <p className={`${commonTextStyle}`}>
         So after weeks of research, trials and errors, after losing all hope and
-         almost about to scrap the project, my professor came up with a
-        brilliant idea.
+        almost about to scrap the project, my professor came up with a brilliant
+        idea.
       </p>
 
       <div className="bg-white/80 p-2 rounded-lg shadow-md border-l-4 border-blue-500">
         <h1 className="text-xl font-semibold text-blue-500">Important:</h1>
         <p className="text-base text-gray-800">
-          - Note there is one caveat here, when we are shooting the ball,
-          there should be no movement in the background, that is the background
-          could be cluttered, does not matter, but there should not be a moving
-          object in the frame, because then it would be captured by the absolute
+          - Note there is one caveat here, when we are shooting the ball, there
+          should be no movement in the background, that is the background could
+          be cluttered, does not matter, but there should not be a moving object
+          in the frame, because then it would be captured by the absolute
           difference.
         </p>
       </div>
@@ -459,10 +476,18 @@ const SelfHostingPage = () => {
       </p>
 
       <p className={`${commonTextStyle}`}>
-      So that is where we decided to actually just detect the contours in the image subtracted, get the area of the contour and if it is 100px, and the aspect ratio 3, that is it is more of an oval shape than a boxier shape, then draw a circle around it, and start tracking its coordinates of the centre.
+        So that is where we decided to actually just detect the contours in the
+        image subtracted, get the area of the contour and if it is 100px, and
+        the aspect ratio 3, that is it is more of an oval shape than a boxier
+        shape, then draw a circle around it, and start tracking its coordinates
+        of the centre.
       </p>
       <p className={`${commonTextStyle}`}>
-      As you can see in this particular frame, it is not a circle, but a deformed shape, which was quite challenging to track, but because of not tracking a circle, but tracking contours and having a threshold of area and aspect ratio, we were able to draw around the contour and mark a circle around it and get the centre coordinates.
+        As you can see in this particular frame, it is not a circle, but a
+        deformed shape, which was quite challenging to track, but because of not
+        tracking a circle, but tracking contours and having a threshold of area
+        and aspect ratio, we were able to draw around the contour and mark a
+        circle around it and get the centre coordinates.
       </p>
 
       <div className="flex flex-col lg:flex-row lg:justify-center lg:space-x-8 items-center">
@@ -545,14 +570,18 @@ const SelfHostingPage = () => {
         </p>
       </div>
 
-      <p className={`${commonTextStyle}`}>Using above two pictures, 640 pixels == 56 inches</p>
       <p className={`${commonTextStyle}`}>
-        Therefore, each pixel
-        has = 0.0875 inches 
+        Using above two pictures, 640 pixels == 56 inches
       </p>
-      <p className={`${commonTextStyle}`}>Now the coordinates are: 223 px, 263 px </p>
-      <p className={`${commonTextStyle}`}>Therefore,
-        the ball is 223 * 0.0875 = 19.5125 inches</p>
+      <p className={`${commonTextStyle}`}>
+        Therefore, each pixel has = 0.0875 inches
+      </p>
+      <p className={`${commonTextStyle}`}>
+        Now the coordinates are: 223 px, 263 px{" "}
+      </p>
+      <p className={`${commonTextStyle}`}>
+        Therefore, the ball is 223 * 0.0875 = 19.5125 inches
+      </p>
       <p className={`${commonTextStyle}`}>
         We have x, y coordinates of the circle with respect to the open cv
         window.
@@ -570,18 +599,82 @@ const SelfHostingPage = () => {
       </div>
 
       <p className={`${commonTextStyle}`}>
-    So the distance from the origin is 84 + 19.512 = 103.5125 inches, so you
-    can see in the <a href="#distance-output" rel="noopener noreferrer" className="text-white underline">screenshot above</a>.
-</p>
-
-
-      <p className={`${commonTextStyle}`}>
-      If you find any bugs, or have suggestions, please write an email (sghodke@ncsu.edu), or create a pull request on GitHub.
+        So the distance from the origin is 84 + 19.512 = 103.5125 inches, so you
+        can see in the{" "}
+        <a
+          href="#distance-output"
+          rel="noopener noreferrer"
+          className="text-white underline"
+        >
+          screenshot above
+        </a>
+        .
       </p>
 
       <p className={`${commonTextStyle}`}>
-      Currently doing masters in computer science at NC State, looking for full-time SWE roles starting May 2025, please write an email (sghodke@ncsu.edu),  if you have any leads.
-      </p>   
+        If you find any bugs, or have suggestions, please write an email
+        (sghodke@ncsu.edu), or create a pull request on GitHub.
+      </p>
+
+      <p className={`${commonTextStyle}`}>
+        Currently doing masters in computer science at NC State, looking for
+        full-time SWE roles starting May 2025, please write an email
+        (sghodke@ncsu.edu), if you have any leads.
+      </p>
+
+      <table>
+  <thead>
+    <tr>
+      <th className={tableStyle}>Type</th>
+      <th className={tableStyle}>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td className={tableStyle}>Email</td>
+      <td className={tableStyle}>
+        <a href="mailto:sghodke@ncsu.edu">sghodke@ncsu.edu</a>
+      </td>
+    </tr>
+    <tr>
+      <td className={tableStyle}>Github Repository</td>
+      <td className={tableStyle}>
+        <a href="https://github.com/wjasper/PingPongTracker" target="_blank">https://github.com/wjasper/PingPongTracker</a>
+      </td>
+    </tr>
+    <tr>
+      <td className={tableStyle}>Website</td>
+      <td className={tableStyle}>
+        <a href="https://shivam.foo/" target="_blank">https://shivam.foo/</a>
+      </td>
+    </tr>
+    <tr>
+      <td className={tableStyle}>Blog</td>
+      <td className={tableStyle}>
+        <a href="https://shivam.foo/blogs/ping-pong-ball-tracking-and-projected-distance-calculation-system-for-data-modeling" target="_blank">https://shivam.foo/blogs/ping-pong-ball-tracking-and-projected-distance-calculation-system-for-data-modeling</a>
+      </td>
+    </tr>
+    <tr>
+      <td className={tableStyle}>Github Profile</td>
+      <td className={tableStyle}>
+        <a href="https://github.com/nuttysunday" target="_blank">https://github.com/nuttysunday</a>
+      </td>
+    </tr>
+    <tr>
+      <td className={tableStyle}>Twitter Profile</td>
+      <td className={tableStyle}>
+        <a href="https://x.com/sundaycide" target="_blank">https://x.com/sundaycide</a>
+      </td>
+    </tr>
+    <tr>
+      <td className={tableStyle}>Resume</td>
+      <td className={tableStyle}>
+        <a href="https://drive.google.com/file/d/1OC_mcMHkBaDhWbKEMfsnLY-uBS8Xee7G/view" target="_blank">View Resume</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
     </Box>
   );
 };

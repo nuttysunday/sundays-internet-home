@@ -5,6 +5,7 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 const SelfHostingPage = () => {
   const commonTextStyle = "text-teal-400 text-left md:text-justify";
+  const tableStyle = `${commonTextStyle} border border-gray-400 px-4 py-2`;
 
   return (
     <Box
@@ -42,7 +43,7 @@ const SelfHostingPage = () => {
             Certi Tester web app
           </p>
           <p className={`${commonTextStyle} italic opacity-90 text-sm`}>
-          Coming mid Nov
+          Coming mid Jan 2025
           </p>
         </div>
       </Box>

@@ -5,6 +5,7 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 const SelfHostingPage = () => {
   const commonTextStyle = "text-pink-400 text-left md:text-justify";
+  const tableStyle = `${commonTextStyle} border border-gray-400 px-4 py-2`;
 
   return (
     <Box
@@ -531,6 +532,59 @@ watchtower:
         setup in the cloud for you, without you needing to do anything. Directly
         gives you SDK to interact with the database reducing complexity.
       </p>
+
+      <table>
+  <thead>
+    <tr>
+      <th className={tableStyle}>Type</th>
+      <th className={tableStyle}>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td className={tableStyle}>Email</td>
+      <td className={tableStyle}>
+        <a href="mailto:sghodke@ncsu.edu">sghodke@ncsu.edu</a>
+      </td>
+    </tr>
+    <tr>
+      <td className={tableStyle}>Github Repository</td>
+      <td className={tableStyle}>
+        <a href="https://github.com/nuttysunday/sundays-internet-home" target="_blank">https://github.com/nuttysunday/sundays-internet-home</a>
+      </td>
+    </tr>
+    <tr>
+      <td className={tableStyle}>Website</td>
+      <td className={tableStyle}>
+        <a href="https://shivam.foo/" target="_blank">https://shivam.foo/</a>
+      </td>
+    </tr>
+    <tr>
+      <td className={tableStyle}>Blog</td>
+      <td className={tableStyle}>
+        <a href="https://shivam.foo/blogs/self-hosting" target="_blank">https://shivam.foo/blogs/self-hosting</a>
+      </td>
+    </tr>
+    <tr>
+      <td className={tableStyle}>Github Profile</td>
+      <td className={tableStyle}>
+        <a href="https://github.com/nuttysunday" target="_blank">https://github.com/nuttysunday</a>
+      </td>
+    </tr>
+    <tr>
+      <td className={tableStyle}>Twitter Profile</td>
+      <td className={tableStyle}>
+        <a href="https://x.com/sundaycide" target="_blank">https://x.com/sundaycide</a>
+      </td>
+    </tr>
+    <tr>
+      <td className={tableStyle}>Resume</td>
+      <td className={tableStyle}>
+        <a href="https://drive.google.com/file/d/1OC_mcMHkBaDhWbKEMfsnLY-uBS8Xee7G/view" target="_blank">View Resume</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
     </Box>
   );
 };
