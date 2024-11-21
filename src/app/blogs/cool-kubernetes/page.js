@@ -61,7 +61,7 @@ const SelfHostingPage = () => {
         Desktop and containerized an application built with Express.js and
         Node.js. Deployed the application using two distinct approaches:
         monolithic and microservices architectures. Conducted load testing with
-        the Locust framework to evaluate pod auto-scaling behavior based on
+        the Locust framework to evaluate pod auto-scaling behaviour based on
         varying load levels. Demonstrated the advantages of the microservices
         approach, where only the specific service under high demand scaled up,
         eliminating the need to scale the entire application.{" "}
@@ -116,14 +116,14 @@ const SelfHostingPage = () => {
               <li>
                 <Link href="#mono-setup">
                   <span>3.1 </span>
-                  <span className="underline">Setup explaination</span>
+                  <span className="underline">Setup explanation</span>
                 </Link>
               </li>
               <li>
                 <Link href="#mono-before-test">
                   <span>3.2 </span>
                   <span className="underline">
-                    Inital state: before loading test
+                    Initial state: before loading test
                   </span>
                 </Link>
               </li>
@@ -155,14 +155,14 @@ const SelfHostingPage = () => {
               <li>
                 <Link href="#micro-setup">
                   <span>4.1 </span>
-                  <span className="underline">Setup explaination</span>
+                  <span className="underline">Setup explanation</span>
                 </Link>
               </li>
               <li>
                 <Link href="#micro-before-test">
                   <span>4.2 </span>
                   <span className="underline">
-                    Inital state: before loading test
+                    Initial state: before loading test
                   </span>
                 </Link>
               </li>
@@ -194,10 +194,7 @@ const SelfHostingPage = () => {
         </ul>
       </div>
 
-      <p
-        id="motivation"
-        className={`${commonTextStyle} text-xl font-bold`}
-      >
+      <p id="motivation" className={`${commonTextStyle} text-xl font-bold`}>
         1. Motivation for project:-
       </p>
 
@@ -211,7 +208,7 @@ const SelfHostingPage = () => {
           <img
             src="/images/cool-kubernetes/image31.png"
             alt="Description of image"
-            className="rounded-lg w-full max-w-[400px]"
+            className="rounded-lg max-w-[400px]"
           />
           <p className={`${commonTextStyle} mt-4 text-white`}>Peak time</p>
         </div>
@@ -234,10 +231,7 @@ const SelfHostingPage = () => {
         then I read more about how it’s done using Kubernetes and docker.
       </p>
 
-      <p
-        id="tech-stack"
-        className={`${commonTextStyle} text-xl font-bold`}
-      >
+      <p id="tech-stack" className={`${commonTextStyle} text-xl font-bold`}>
         2. Tech stack:-
       </p>
 
@@ -301,8 +295,8 @@ const SelfHostingPage = () => {
             <td className={tableStyle}>Docker</td>
             <td className={tableStyle}>
               A tool used to create and manage a container. Think of a container
-              similar to a VM with everything needed for the code to run and
-              it's isolated from the host machine.
+              similar to a VM with everything needed for the code to run and it
+              is isolated from the host machine.
             </td>
           </tr>
           <tr>
@@ -325,32 +319,30 @@ const SelfHostingPage = () => {
           <tr>
             <td className={tableStyle}>Pods</td>
             <td className={tableStyle}>
-             Smallest unit which can be deployed in k8. A pod can have multiple containers
+              Smallest unit which can be deployed in k8. A pod can have multiple
+              containers.
             </td>
           </tr>
           <tr>
             <td className={tableStyle}>Cluster</td>
             <td className={tableStyle}>
-            There is master node and multiple worker nodes. The master node is the brain, manages load between the workers. Cluster can have pods spread across multiple differnet nodes.
+              There is a master node and multiple worker nodes. The master node
+              is the brain, which manages the load between the workers. The
+              cluster can have pods spread across multiple different nodes.
             </td>
           </tr>
           <tr>
             <td className={tableStyle}>Node</td>
-            <td className={tableStyle}>
-A simple VM or physical computer.            </td>
+            <td className={tableStyle}>A simple VM or physical computer. </td>
           </tr>
         </tbody>
       </table>
 
+      <p className={commonTextStyle}>Hierarchy in easy terms:</p>
 
       <p className={commonTextStyle}>
-       Heirarchy in easy term:
+        Cluster &gt; Node &gt; Pod &gt; Container
       </p>
-
-      <p className={commonTextStyle}>
-      Cluster &gt; Node &gt; Pod &gt; Container
-</p>
-
 
       <p className={commonTextStyle}>
         To run Kubernetes locally we use the feature which is inbuilt docker
@@ -390,12 +382,12 @@ A simple VM or physical computer.            </td>
       </p>
 
       <p id="mono-setup" className={`${commonTextStyle} text-lg font-bold`}>
-        3.1. Setup explaination:-
+        3.1. Setup explanation:-
       </p>
 
       <p className={commonTextStyle}>
         In this practice, what we do is put all the software in one single
-        container, this is really easy to setup, but it has few drawbacks.
+        container, this is really easy to setup, but it has a few drawbacks.
       </p>
 
       <div className="flex flex-col items-center mb-8 lg:mb-0">
@@ -430,7 +422,7 @@ A simple VM or physical computer.            </td>
           />
           <p className={`${commonTextStyle} mt-4 text-white`}>
             This is the dockerfile. And we create a docker image of this
-            software and push it to docker hub
+            software and push it to docker hub.
           </p>
         </div>
       </div>
@@ -471,8 +463,11 @@ A simple VM or physical computer.            </td>
         only being directed at a specific endpoint.
       </p>
 
-      <p id="mono-before-test" className={`${commonTextStyle} text-lg font-bold`}>
-        3.2. Inital state: before loading test
+      <p
+        id="mono-before-test"
+        className={`${commonTextStyle} text-lg font-bold`}
+      >
+        3.2. Initial state: before loading test
       </p>
 
       <p className={commonTextStyle}>We have 3 replicas of our application</p>
@@ -483,7 +478,7 @@ A simple VM or physical computer.            </td>
           className="rounded-lg w-full max-w-[800px]"
         />
         <p className={`${commonTextStyle} mt-4 text-white`}>
-          k8 Dashboard: Inital State
+          k8 Dashboard: Initial State
         </p>
       </div>
 
@@ -494,11 +489,14 @@ A simple VM or physical computer.            </td>
           className="rounded-lg w-full max-w-[800px]"
         />
         <p className={`${commonTextStyle} mt-4 text-white`}>
-          k8 terminal: Inital State
+          k8 terminal: Initial State
         </p>
       </div>
 
-      <p id="mono-during-test" className={`${commonTextStyle} text-lg font-bold`}>
+      <p
+        id="mono-during-test"
+        className={`${commonTextStyle} text-lg font-bold`}
+      >
         3.3. Stress state: during loading test
       </p>
 
@@ -514,12 +512,12 @@ A simple VM or physical computer.            </td>
       </div>
 
       <p className={commonTextStyle}>
-        Even tho only the load is increasing at particular service amongst (/,
+        Even tho only the load is increasing at a particular service amongst (/,
         /service_a, /service_b), our full application would be scaled up.
       </p>
       <p className={commonTextStyle}>Load at its peak (10k user per second)</p>
 
-      <p className={commonTextStyle}>All 15 pods up and running.</p>
+      <p className={commonTextStyle}>All 15 are pods up and running.</p>
       <div className="flex flex-col items-center mb-8 lg:mb-0">
         <img
           src="/images/cool-kubernetes/image27.png"
@@ -559,11 +557,16 @@ A simple VM or physical computer.            </td>
         can be quite expensive in some cases.
       </p>
 
-      <p id="mono-after-test" className={`${commonTextStyle} text-lg font-bold`}>
+      <p
+        id="mono-after-test"
+        className={`${commonTextStyle} text-lg font-bold`}
+      >
         3.4 Final state: after loading test
       </p>
 
-      <p className={commonTextStyle}>Kubernetes scaling down the application</p>
+      <p className={commonTextStyle}>
+        Kubernetes scaling down the application.
+      </p>
 
       <div className="flex flex-col items-center mb-8 lg:mb-0">
         <img
@@ -613,7 +616,7 @@ A simple VM or physical computer.            </td>
       </p>
 
       <p id="micro-setup" className={`${commonTextStyle} text-lg font-bold`}>
-        4.1. Setup explaination:-
+        4.1. Setup explanation:-
       </p>
       <p className={commonTextStyle}>
         Decoupling tightly packed services in the monolithic architecture and
@@ -632,10 +635,10 @@ A simple VM or physical computer.            </td>
       </div>
 
       <p className={commonTextStyle}>
-        Also set up a proxy server which would redirect the request to correct
-        pod service A or B. This proxy server also act as load balancer, that is
-        distribute the load for service B amongst the pod B replicas improving
-        performance
+        Also, set up a proxy server which would redirect the request to the
+        correct pod service A or B. This proxy server also acts as load
+        balancer, that is distributes the load for service B amongst the pod B
+        replicas improving performance .
       </p>
       <div className="flex flex-col items-center mb-8 lg:mb-0">
         <img
@@ -693,22 +696,26 @@ A simple VM or physical computer.            </td>
 
       <ul className={`${commonTextStyle} list-disc pl-5`}>
         <li>
-          <strong>deployment.yml:</strong> Indicating, pod size for each service.
+          <strong>deployment.yml:</strong> Indicating, pod size for each
+          service.
         </li>
         <li>
           <strong>hpa.yml:</strong> Independent scaling criteria for individual
           service proxy-server-deployment.yml: Allocation sufficient resources
-          to proxy server and making it load balancer type.
+          to the proxy server and making it load balancer type.
         </li>
       </ul>
 
-      <p id="micro-before-test" className={`${commonTextStyle} text-lg font-bold`}>
-        4.2.Inital state: before loading test:-
+      <p
+        id="micro-before-test"
+        className={`${commonTextStyle} text-lg font-bold`}
+      >
+        4.2.Initial state: before loading test:-
       </p>
 
       <p className={`${commonTextStyle}`}>
-        Total 5 pods:- 1 replica of proxy server, 2 replica of pod of service A,
-        2 replica of pod of service B
+        Total 5 pods:- 1 replica of proxy server, 2 replicas of pod of service
+        A, 2 replicas of pod of service B
       </p>
 
       <div className="flex flex-col items-center mb-8 lg:mb-0">
@@ -718,7 +725,7 @@ A simple VM or physical computer.            </td>
           className="rounded-lg w-full max-w-[800px]"
         />
         <p className={`${commonTextStyle} mt-4 text-white`}>
-          k8 Dashboard: Inital State
+          k8 Dashboard: Initial State
         </p>
       </div>
 
@@ -729,11 +736,14 @@ A simple VM or physical computer.            </td>
           className="rounded-lg w-full max-w-[800px]"
         />
         <p className={`${commonTextStyle} mt-4 text-white`}>
-          k8 Terminal: Inital State
+          k8 Terminal: Initial State
         </p>
       </div>
 
-      <p id="micro-during-test" className={`${commonTextStyle} text-lg font-bold`}>
+      <p
+        id="micro-during-test"
+        className={`${commonTextStyle} text-lg font-bold`}
+      >
         4.3. Stress state: during loading test
       </p>
 
@@ -746,7 +756,7 @@ A simple VM or physical computer.            </td>
         <p className={`${commonTextStyle} mt-4 text-white`}>
           Starting loading test on http://localhost:80/service_b So this should
           spin up more replicas only of service b pods, unlike the full
-          application in monolithic approach.
+          application in the monolithic approach.
         </p>
       </div>
 
@@ -788,7 +798,10 @@ A simple VM or physical computer.            </td>
         </p>
       </div>
 
-      <p id="micro-after-test" className={`${commonTextStyle} text-lg font-bold`}>
+      <p
+        id="micro-after-test"
+        className={`${commonTextStyle} text-lg font-bold`}
+      >
         4.4. Final state: after loading test
       </p>
       <div className="flex flex-col items-center mb-8 lg:mb-0">
@@ -824,17 +837,16 @@ A simple VM or physical computer.            </td>
         </p>
       </div>
 
-      <p
-        id="conclusion"
-        className={`${commonTextStyle} text-xl font-bold`}
-      >
+      <p id="conclusion" className={`${commonTextStyle} text-xl font-bold`}>
         5. Monolithic vs Microservices:-
       </p>
 
-
       <p className={commonTextStyle}>
-       I obviously know, how complicated an acutal application might be, specially when a database is involved, because of simultaneous disk I/O operations,
-       resulting in data inconsistency, race conditions, when multiple services access same resouces, message queing, etc. But this was my attempt to explore k8.
+        I obviously know, how complicated an actual application might be,
+        especially when a database is involved, because of simultaneous disk I/O
+        operations, resulting in data inconsistency, race conditions, when
+        multiple services access the same resources, message queuing, etc. But
+        this was my attempt to explore k8.
       </p>
 
       <table>
@@ -850,7 +862,9 @@ A simple VM or physical computer.            </td>
             <td className={tableStyle}>Services loosely coupled</td>
           </tr>
           <tr>
-            <td className={tableStyle}>Full application is packaged in a pod</td>
+            <td className={tableStyle}>
+              Full application is packaged in a pod
+            </td>
             <td className={tableStyle}>Each service gets its own pod</td>
           </tr>
           <tr>
@@ -858,8 +872,14 @@ A simple VM or physical computer.            </td>
             <td className={tableStyle}>Challenging to implement</td>
           </tr>
           <tr>
-            <td className={tableStyle}>Even if load increases at a particular endpoint/service, full application is scaled up.</td>
-            <td className={tableStyle}>Only the particular service is scaled up at which load is increasing</td>
+            <td className={tableStyle}>
+              Even if the load increases at a particular endpoint/service, the
+              full application is scaled up.
+            </td>
+            <td className={tableStyle}>
+              Only the particular service is scaled up at which the load is
+              increasing
+            </td>
           </tr>
           <tr>
             <td className={tableStyle}>Higher cost</td>
@@ -869,63 +889,83 @@ A simple VM or physical computer.            </td>
       </table>
 
       <p className={commonTextStyle}>
-      Seeking full-time SWE roles starting May 2025, please contact me at sghodke@ncsu.edu if you have any leads.
-
+        Seeking full-time SWE roles starting May 2025, please contact me at
+        sghodke@ncsu.edu if you have any leads.
       </p>
-      
-      <table>
-  <thead>
-    <tr>
-      <th className={tableStyle}>Type</th>
-      <th className={tableStyle}>Details</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td className={tableStyle}>Email</td>
-      <td className={tableStyle}>
-        <a href="mailto:sghodke@ncsu.edu">sghodke@ncsu.edu</a>
-      </td>
-    </tr>
-    <tr>
-      <td className={tableStyle}>Github Repository</td>
-      <td className={tableStyle}>
-        <a href="https://github.com/nuttysunday/cool-kubernetes" target="_blank">https://github.com/nuttysunday/cool-kubernetes</a>
-      </td>
-    </tr>
-    <tr>
-      <td className={tableStyle}>Website</td>
-      <td className={tableStyle}>
-        <a href="https://shivam.foo/" target="_blank">https://shivam.foo/</a>
-      </td>
-    </tr>
-    <tr>
-      <td className={tableStyle}>Blog</td>
-      <td className={tableStyle}>
-        <a href="https://shivam.foo/blogs/cool-kubernetes" target="_blank">https://shivam.foo/blogs/cool-kubernetes</a>
-      </td>
-    </tr>
-    <tr>
-      <td className={tableStyle}>Github Profile</td>
-      <td className={tableStyle}>
-        <a href="https://github.com/nuttysunday" target="_blank">https://github.com/nuttysunday</a>
-      </td>
-    </tr>
-    <tr>
-      <td className={tableStyle}>Twitter Profile</td>
-      <td className={tableStyle}>
-        <a href="https://x.com/sundaycide" target="_blank">https://x.com/sundaycide</a>
-      </td>
-    </tr>
-    <tr>
-      <td className={tableStyle}>Resume</td>
-      <td className={tableStyle}>
-        <a href="https://drive.google.com/file/d/1OC_mcMHkBaDhWbKEMfsnLY-uBS8Xee7G/view" target="_blank">View Resume</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
 
+      <table>
+        <thead>
+          <tr>
+            <th className={tableStyle}>Type</th>
+            <th className={tableStyle}>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className={tableStyle}>Email</td>
+            <td className={tableStyle}>
+              <a href="mailto:sghodke@ncsu.edu">sghodke@ncsu.edu</a>
+            </td>
+          </tr>
+          <tr>
+            <td className={tableStyle}>Github Repository</td>
+            <td className={tableStyle}>
+              <a
+                href="https://github.com/nuttysunday/cool-kubernetes"
+                target="_blank"
+              >
+                https://github.com/nuttysunday/cool-kubernetes
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td className={tableStyle}>Website</td>
+            <td className={tableStyle}>
+              <a href="https://shivam.foo/" target="_blank">
+                https://shivam.foo/
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td className={tableStyle}>Blog</td>
+            <td className={tableStyle}>
+              <a
+                href="https://shivam.foo/blogs/cool-kubernetes"
+                target="_blank"
+              >
+                https://shivam.foo/blogs/cool-kubernetes
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td className={tableStyle}>Github Profile</td>
+            <td className={tableStyle}>
+              <a href="https://github.com/nuttysunday" target="_blank">
+                https://github.com/nuttysunday
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td className={tableStyle}>Twitter Profile</td>
+            <td className={tableStyle}>
+              <a href="https://x.com/sundaycide" target="_blank">
+                https://x.com/sundaycide
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td className={tableStyle}>Resume</td>
+            <td className={tableStyle}>
+              <a
+                href="https://drive.google.com/file/d/1OC_mcMHkBaDhWbKEMfsnLY-uBS8Xee7G/view"
+                target="_blank"
+              >
+                View Resume
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </Box>
   );
 };
