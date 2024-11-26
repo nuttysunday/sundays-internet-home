@@ -1,5 +1,31 @@
 {
   "pages": {
+    "/not-found": [
+      "static/chunks/webpack-2b9fb6867f1b33aa.js",
+      "static/chunks/fd9d1056-858637d525bb3ac1.js",
+      "static/chunks/23-f5f819f656054356.js",
+      "static/chunks/main-app-6af752caf62e832e.js",
+      "static/chunks/app/not-found-529e2da795c623f5.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack-2b9fb6867f1b33aa.js",
+      "static/chunks/fd9d1056-858637d525bb3ac1.js",
+      "static/chunks/23-f5f819f656054356.js",
+      "static/chunks/main-app-6af752caf62e832e.js",
+      "static/chunks/app/_not-found/page-808912c51af1f9c9.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-2b9fb6867f1b33aa.js",
+      "static/chunks/fd9d1056-858637d525bb3ac1.js",
+      "static/chunks/23-f5f819f656054356.js",
+      "static/chunks/main-app-6af752caf62e832e.js",
+      "static/css/e588391ba1a1e79e.css",
+      "static/css/5d45a296544a157d.css",
+      "static/chunks/123-5763273741b40460.js",
+      "static/chunks/231-f2776a8743eaa516.js",
+      "static/chunks/174-3e6a25153a9a191d.js",
+      "static/chunks/app/layout-1a90e1012280eb2d.js"
+    ],
     "/blogs/certi-tester-web-app/page": [
       "static/chunks/webpack-2b9fb6867f1b33aa.js",
       "static/chunks/fd9d1056-858637d525bb3ac1.js",
@@ -9,41 +35,29 @@
       "static/chunks/231-f2776a8743eaa516.js",
       "static/chunks/10-40d6703f678e539e.js",
       "static/chunks/118-94405dbaa0bf7dc1.js",
-      "static/chunks/app/blogs/certi-tester-web-app/page-723b5efa96f94f7d.js"
+      "static/chunks/app/blogs/certi-tester-web-app/page-c9e5789a4897b1b3.js"
     ],
-    "/layout": [
+    "/blogs/nextjs-just-blew-my-mind/page": [
       "static/chunks/webpack-2b9fb6867f1b33aa.js",
       "static/chunks/fd9d1056-858637d525bb3ac1.js",
       "static/chunks/23-f5f819f656054356.js",
       "static/chunks/main-app-6af752caf62e832e.js",
-      "static/css/e588391ba1a1e79e.css",
-      "static/css/79d15dd6b884bf05.css",
       "static/chunks/123-5763273741b40460.js",
       "static/chunks/231-f2776a8743eaa516.js",
-      "static/chunks/174-3e6a25153a9a191d.js",
-      "static/chunks/app/layout-1a90e1012280eb2d.js"
+      "static/chunks/10-40d6703f678e539e.js",
+      "static/chunks/118-94405dbaa0bf7dc1.js",
+      "static/chunks/app/blogs/nextjs-just-blew-my-mind/page-df8b7541697492a1.js"
     ],
-    "/not-found": [
+    "/blogs/cool-kubernetes/page": [
       "static/chunks/webpack-2b9fb6867f1b33aa.js",
       "static/chunks/fd9d1056-858637d525bb3ac1.js",
       "static/chunks/23-f5f819f656054356.js",
       "static/chunks/main-app-6af752caf62e832e.js",
-      "static/chunks/app/not-found-529e2da795c623f5.js"
-    ],
-    "/blogs/page": [
-      "static/chunks/webpack-2b9fb6867f1b33aa.js",
-      "static/chunks/fd9d1056-858637d525bb3ac1.js",
-      "static/chunks/23-f5f819f656054356.js",
-      "static/chunks/main-app-6af752caf62e832e.js",
+      "static/chunks/123-5763273741b40460.js",
       "static/chunks/231-f2776a8743eaa516.js",
-      "static/chunks/app/blogs/page-2cc07b9b91641ce5.js"
-    ],
-    "/_not-found/page": [
-      "static/chunks/webpack-2b9fb6867f1b33aa.js",
-      "static/chunks/fd9d1056-858637d525bb3ac1.js",
-      "static/chunks/23-f5f819f656054356.js",
-      "static/chunks/main-app-6af752caf62e832e.js",
-      "static/chunks/app/_not-found/page-808912c51af1f9c9.js"
+      "static/chunks/10-40d6703f678e539e.js",
+      "static/chunks/118-94405dbaa0bf7dc1.js",
+      "static/chunks/app/blogs/cool-kubernetes/page-3624bb8ace876950.js"
     ],
     "/blogs/ping-pong-ball-tracking-and-projected-distance-calculation-system-for-data-modeling/page": [
       "static/chunks/webpack-2b9fb6867f1b33aa.js",
@@ -64,6 +78,14 @@
       "static/chunks/main-app-6af752caf62e832e.js",
       "static/chunks/app/page-c7b54bbaa49bb155.js"
     ],
+    "/blogs/page": [
+      "static/chunks/webpack-2b9fb6867f1b33aa.js",
+      "static/chunks/fd9d1056-858637d525bb3ac1.js",
+      "static/chunks/23-f5f819f656054356.js",
+      "static/chunks/main-app-6af752caf62e832e.js",
+      "static/chunks/231-f2776a8743eaa516.js",
+      "static/chunks/app/blogs/page-2cc07b9b91641ce5.js"
+    ],
     "/blogs/self-hosting/page": [
       "static/chunks/webpack-2b9fb6867f1b33aa.js",
       "static/chunks/fd9d1056-858637d525bb3ac1.js",
@@ -73,18 +95,7 @@
       "static/chunks/231-f2776a8743eaa516.js",
       "static/chunks/10-40d6703f678e539e.js",
       "static/chunks/118-94405dbaa0bf7dc1.js",
-      "static/chunks/app/blogs/self-hosting/page-d6249d606f75cd7d.js"
-    ],
-    "/blogs/cool-kubernetes/page": [
-      "static/chunks/webpack-2b9fb6867f1b33aa.js",
-      "static/chunks/fd9d1056-858637d525bb3ac1.js",
-      "static/chunks/23-f5f819f656054356.js",
-      "static/chunks/main-app-6af752caf62e832e.js",
-      "static/chunks/123-5763273741b40460.js",
-      "static/chunks/231-f2776a8743eaa516.js",
-      "static/chunks/10-40d6703f678e539e.js",
-      "static/chunks/118-94405dbaa0bf7dc1.js",
-      "static/chunks/app/blogs/cool-kubernetes/page-15f7c0ff447c2a85.js"
+      "static/chunks/app/blogs/self-hosting/page-50d9702f4555eff5.js"
     ],
     "/projects/page": [
       "static/chunks/webpack-2b9fb6867f1b33aa.js",
@@ -96,7 +107,7 @@
       "static/chunks/174-3e6a25153a9a191d.js",
       "static/chunks/173-fcd2d7ac65048d0f.js",
       "static/chunks/247-fbc19029a7f2dd78.js",
-      "static/chunks/app/projects/page-f5da0d523cabc4c5.js"
+      "static/chunks/app/projects/page-02efe033d42cf784.js"
     ],
     "/skills/page": [
       "static/chunks/webpack-2b9fb6867f1b33aa.js",

@@ -22,53 +22,6 @@ const LinuxIcon = (props) => (
 
 const projects = [
   {
-    title: "Cool Kubernetes",
-    githubLink: "https://github.com/nuttysunday/cool-kubernetes",
-    specialInfo:[ 
-      { text: "Read about the blog on project",  link:"https://shivam.foo/blogs/cool-kubernetes"},
-    ],
-    date: "Nov 2024",
-    logo: <RocketLaunchIcon />,
-    description: {
-      introduction: "Implemented a single-node Kubernetes cluster locally using Docker Desktop and containerized an application built with Express.js and Node.js. Deployed the application using two distinct approaches: monolithic and microservices architectures. Conducted load testing with the Locust framework to evaluate pod auto-scaling behavior based on varying load levels. Demonstrated the advantages of the microservices approach, where only the specific service under high demand scaled up, eliminating the need to scale the entire application.",
-      youTubeEmbedSrc:"https://www.youtube.com/embed/ChnmwBABMaM?si=mKP5WTdV3Ut-BJpb",
-    },
-    techStack: "JavaScript, Node.js, Express.js, Docker, Kubernetes (single-node in Docker Desktop), Locust (Python), k8 Services (LoadBalancer, NodePort, Deployment, Pods, Horizontal AutoScaling), Monolithic and Microservices Architecture.",
-  },
-  {
-    title: "Ping-Pong ball tracking and projected distance calculation system for data modeling",
-    githubLink: "https://github.com/wjasper/PingPongTracker",
-    specialInfo:[ 
-      { text: "Read about the blog on our visualization system:",  link:"https://shivam.foo/blogs/ping-pong-ball-tracking-and-projected-distance-calculation-system-for-data-modeling"},
-      { text: "Project in collaboration with Dr. Warren Jasper",  link:"https://textiles.ncsu.edu/people/wjasper/"},
-
-    ],
-    date: "July 2024",
-    logo: <SportsTennisIcon />,
-    description: {
-      introduction: "I am truly grateful to Dr. Warren Jasper for giving me the opportunity to work on a project that interacts with real-world conditions. It has been quite a challenging journey, but after weeks of effort, we were able to produce results that truly matter, and were acurate upto quarter of an inch. Using our visualization system consisting of a Raspberry Pi, HD camera, and power bank, we were able to accurately track and calculate projected distances using our Python program. We implemented techniques such as post-processing, background separation, calibration, and contour detection using threshold area and aspect ratio. This approach allows us to convert the coordinates into distances measured in inches.",
-      youTubeEmbedSrc:"https://www.youtube.com/embed/N7TDCUCSW0k?si=hrYcrrFfqz_ToVoW",
-    },
-    techStack: "Python, OpenCV, Raspberry Pi, PiCamera",
-  },
-  {
-    title: "Self hosting [Sunday's internet home]",
-    link: "https://shivam.foo",
-    date: "Sept 2024",
-    logo: <SelfImprovementIcon />,
-    description: {
-      introduction:"The website you are currently seeing is hosted on Google Cloud Compute Engine, previously self hosted on Raspberry Pi, and I have also setup a CI/CD pipeline to reflect changes on the actual website in real-time. In this pipeline, before one commits the code, git pre-commit hook script runs building the Next Js image locally, building the docker image locally and spinning up the container, after user approval the container is taken down, and code is pushed to github, where github actions build and push the image to Dockerhub, and then on the remote server Docker watchtower, pulls the updated image and rebuilds the container, resulting in changes on the actual website. I don't care much about the developement side of this but self-hosting and pipeline is pretty cool."   
-      ,youTubeEmbedSrc:
-      "https://www.youtube.com/embed/_IoQ6Dux8g8?si=uCX2zliGSLllFJTB",
-    },
-    techStack:
-      "NextJS (React), Deployed on Google Cloud previously (Raspberry Pi), Material UI, TailwindCSS, Docker, Docker Watchtower, CI/CD, Cloudflare Tunnel, SSH Setup, OpenVPN, Firewall Configuration, Shell Scripting",
-    githubLink: "https://github.com/nuttysunday/sundays-internet-home",
-    specialInfo :[
-      { text: "Setup custom mail server using ImprovMX. So you can mail me on: mail@shivam.foo"},
-      { text: "Read about the blog on self-hosting and CI/CD pipeline:", link:"https://shivam.foo/blogs/self-hosting"}]  },
-  ,
-  {
     title: "Python Package for MCC Linux Drivers [Contribution to Open Source]",
     githubLink: "https://github.com/nuttysunday/Linux_Drivers",
     date: "Ongoing 2024",
@@ -93,18 +46,68 @@ const projects = [
   {
     title: "Minimalistic News",
     link: "https://news.shivam.foo",
-    date: "Ongoing 2024",
+    date: "Oct 2024",
     logo: <NewspaperIcon />,
     description: {
       introduction:
-        "Minimalistic News was created to provide a quick and straightforward way to access the latest news headlines. With filtering options based on country, category, and language, it offers a clean and clutter-free experience without annoying ads. I was exploring NextJS and learned its cool features like Server-side Rendering and Caching, how it caches the requeste and doesn't query to the database/external API, however for fresh updates, I am clearing the cache every 12 hours.",
+"Minimalistic News was created to provide a quick and straightforward way to access the latest news headlines. With filtering options based on country, category, and language, it offers a clean and clutter-free experience without annoying ads. I wanted to learn about Next.js but never felt the need to learn it, so decided to make news.shivam.foo and learn about it along the way, I was really amused by how it handles routing using its file based approach, and easy it is to implement caching, such that less request are made to the actual data source. Also Vercel makes the deployment seamless no need to dockerize, worry about VM, having subdomain point towards its IP address, or about handling the load.",        image: [
+          { src: "/images/news.png", caption: "Snapshot of the acutal website" }
+        ],
     },
+    specialInfo:[ 
+      { text: "Read about the blog on project",  link:"https://shivam.foo/blogs/nextjs-just-blew-my-mind"},
+    ],
     techStack:
       "NextJS (React), Deployed on Vercel, Material UI, TailwindCSS, NewsAPI",
     githubLink: "https://github.com/nuttysunday/news",
   },
-  
+  {
+    title: "Self hosting [Sunday's internet home]",
+    link: "https://shivam.foo",
+    date: "Sept 2024",
+    logo: <SelfImprovementIcon />,
+    description: {
+      introduction:"The website you are currently seeing is hosted on Google Cloud Compute Engine, previously self hosted on Raspberry Pi, and I have also setup a CI/CD pipeline to reflect changes on the actual website in real-time. In this pipeline, before one commits the code, git pre-commit hook script runs building the Next Js image locally, building the docker image locally and spinning up the container, after user approval the container is taken down, and code is pushed to github, where github actions build and push the image to Dockerhub, and then on the remote server Docker watchtower, pulls the updated image and rebuilds the container, resulting in changes on the actual website. I don't care much about the developement side of this but self-hosting and pipeline is pretty cool."   
+      ,youTubeEmbedSrc:
+      "https://www.youtube.com/embed/_IoQ6Dux8g8?si=uCX2zliGSLllFJTB",
+    },
+    techStack:
+      "NextJS (React), Deployed on Google Cloud previously (Raspberry Pi), Material UI, TailwindCSS, Docker, Docker Watchtower, CI/CD, Cloudflare Tunnel, SSH Setup, OpenVPN, Firewall Configuration, Shell Scripting",
+    githubLink: "https://github.com/nuttysunday/sundays-internet-home",
+    specialInfo :[
+      { text: "Setup custom mail server using ImprovMX. So you can mail me on: mail@shivam.foo"},
+      { text: "Read about the blog on self-hosting and CI/CD pipeline:", link:"https://shivam.foo/blogs/self-hosting"}]  
+    },  
+  {
+    title: "Cool Kubernetes",
+    githubLink: "https://github.com/nuttysunday/cool-kubernetes",
+    specialInfo:[ 
+      { text: "Read about the blog on project",  link:"https://shivam.foo/blogs/cool-kubernetes"},
+    ],
+    date: "July 2024",
+    logo: <RocketLaunchIcon />,
+    description: {
+      introduction: "Implemented a single-node Kubernetes cluster locally using Docker Desktop and containerized an application built with Express.js and Node.js. Deployed the application using two distinct approaches: monolithic and microservices architectures. Conducted load testing with the Locust framework to evaluate pod auto-scaling behavior based on varying load levels. Demonstrated the advantages of the microservices approach, where only the specific service under high demand scaled up, eliminating the need to scale the entire application.",
+      youTubeEmbedSrc:"https://www.youtube.com/embed/ChnmwBABMaM?si=mKP5WTdV3Ut-BJpb",
+    },
+    techStack: "JavaScript, Node.js, Express.js, Docker, Kubernetes (single-node in Docker Desktop), Locust (Python), k8 Services (LoadBalancer, NodePort, Deployment, Pods, Horizontal AutoScaling), Monolithic and Microservices Architecture.",
+  },
+  {
+    title: "Ping-Pong ball tracking and projected distance calculation system for data modeling",
+    githubLink: "https://github.com/wjasper/PingPongTracker",
+    specialInfo:[ 
+      { text: "Read about the blog on our visualization system:",  link:"https://shivam.foo/blogs/ping-pong-ball-tracking-and-projected-distance-calculation-system-for-data-modeling"},
+      { text: "Project in collaboration with Dr. Warren Jasper",  link:"https://textiles.ncsu.edu/people/wjasper/"},
 
+    ],
+    date: "July 2024",
+    logo: <SportsTennisIcon />,
+    description: {
+      introduction: "I am truly grateful to Dr. Warren Jasper for giving me the opportunity to work on a project that interacts with real-world conditions. It has been quite a challenging journey, but after weeks of effort, we were able to produce results that truly matter, and were acurate upto quarter of an inch. Using our visualization system consisting of a Raspberry Pi, HD camera, and power bank, we were able to accurately track and calculate projected distances using our Python program. We implemented techniques such as post-processing, background separation, calibration, and contour detection using threshold area and aspect ratio. This approach allows us to convert the coordinates into distances measured in inches.",
+      youTubeEmbedSrc:"https://www.youtube.com/embed/N7TDCUCSW0k?si=hrYcrrFfqz_ToVoW",
+    },
+    techStack: "Python, OpenCV, Raspberry Pi, PiCamera",
+  },
   {
     title: "Protocol-Based Deep Intrusion Detection for DoS and DDoS Attacks",
     githubLink:
