@@ -134,6 +134,14 @@ const Page = () => {
                 </Typography>
 
                 {project.description.youTubeEmbedSrc && (
+                <Link
+                href={`https://www.youtube.com/watch?v=${project.description.youTubeEmbedSrc.split("/")[4]}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  sx={{
+                    textDecoration: "none", // Remove underline
+                  }}
+                >
                   <Typography
                     sx={{
                       position: "absolute",
@@ -150,7 +158,9 @@ const Page = () => {
                   >
                     Video
                   </Typography>
-                )}
+                </Link>
+              )}
+
               </Card>
             </Tooltip>
           </Grid>
