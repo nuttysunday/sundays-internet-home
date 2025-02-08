@@ -63,7 +63,7 @@ const Page = () => {
                 sx={{
                   display: "flex",
                   alignItems: "center",
-                  padding: 3,
+                  padding: 5,
                   borderRadius: "20px",
                   boxShadow: "3px 3px 0px 0px #B0BEC5",
                   position: "relative",
@@ -74,7 +74,7 @@ const Page = () => {
                     boxShadow:
                       "8px 8px 0px 0px #fae263, 15px 15px 0px 0px #a5b4fc",
                   },
-                  height: "8rem",
+                  height: "9rem",
                   backgroundColor: "transparent",
                   color: "#a5b4fc",
                   border: "0.8px solid",
@@ -246,7 +246,7 @@ const Page = () => {
                   fontSize: "1.2rem",
                 }}
               >
-                {selectedProject.link.replace(/^https?:\/\//, "")}
+               {selectedProject.link.replace(/^https?:\/\//, "")}
               </Link>
             )}
 

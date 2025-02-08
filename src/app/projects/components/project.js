@@ -32,6 +32,15 @@ const projects = [
       introduction:"I always wanted to compare my split data like heart rate, time, speed per split across different runs, or how was my activity on the day of workout, or how do the environment conditions like temperature, humidity, elevation affect my running metrics like vertical oscillation, stride length. Also how does my previous nights sleep affect my performance. But no such app exists, so I just decided to make one of my own. I learned about SwiftUI on the fly, have had not prior knowledge about it."   
       ,youTubeEmbedSrc:
       "https://www.youtube.com/embed/Q0ybmvi2vB8?si=RrVfsUDewztq0v8i",
+      image: [
+        { src: "/images/run-away-ios-app/iPad/All.png", caption: "iPad Preview Taking advantage of the bigger display." },  
+        { src: "/images/run-away-ios-app/iPad/Settings_1.png", caption: "iPad Settings 1 Menu." },  
+        { src: "/images/run-away-ios-app/iPad/Settings_2.png", caption: "iPad Settings 2 Menu." },  
+        { src: "/images/run-away-ios-app/iPhone/heartrate.png", caption: "Compare average heart rate of each split across different runs." },
+        { src: "/images/run-away-ios-app/iPhone/SpiderRunningMetrics.png", caption: "See how external conditions (elevation gain), affect stride length." },
+        { src: "/images/run-away-ios-app/iPhone/SleepBefore.png", caption: "Sleep on the night before workout." },
+        { src: "/images/run-away-ios-app/iPhone/DailyMetrics.png", caption: "Total Day activity on the the day of workout." },  
+      ],
     },
     techStack: "Swift, SwiftUI, HealthKit, HighCharts, Lottie",
   },
