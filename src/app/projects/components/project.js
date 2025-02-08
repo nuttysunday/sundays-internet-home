@@ -8,6 +8,8 @@ import SportsTennisIcon from "@mui/icons-material/SportsTennis";
 import EdgesensorHighIcon from "@mui/icons-material/EdgesensorHigh";
 import SelfImprovementIcon from '@mui/icons-material/SelfImprovement';
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
+import AppleIcon from '@mui/icons-material/Apple';
+
 
 //https://github.com/PiyushCC/ai-image-enhancer-web-app
 
@@ -21,6 +23,18 @@ const LinuxIcon = (props) => (
 );
 
 const projects = [
+  {
+    title: "RunAway: Perfect Your Run [iOS & iPadOS app]",
+    link: "https://ios-app.shivam.foo",
+    date: "Jan 2025",
+    logo: <AppleIcon />,
+    description: {
+      introduction:"I always wanted to compare my split data like heart rate, time, speed per split across different runs, or how was my activity on the day of workout, or how do the environment conditions like temperature, humidity, elevation affect my running metrics like vertical oscillation, stride length. Also how does my previous nights sleep affect my performance. But no such app exists, so I just decided to make one of my own. I learned about SwiftUI on the fly, have had not prior knowledge about it."   
+      ,youTubeEmbedSrc:
+      "https://www.youtube.com/embed/Q0ybmvi2vB8?si=RrVfsUDewztq0v8i",
+    },
+    techStack: "Swift, SwiftUI, HealthKit, HighCharts, Lottie",
+  },
   {
     title: "Python Package for MCC Linux Drivers [Contribution to Open Source]",
     githubLink: "https://github.com/nuttysunday/Linux_Drivers",
