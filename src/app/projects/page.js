@@ -14,12 +14,12 @@ import CloseIcon from "@mui/icons-material/Close";
 import Tooltip from "@mui/material/Tooltip";
 import Fade from "@mui/material/Fade";
 import projects from "./components/project";
-import Image from 'next/image';
-
+import Image from "next/image";
 
 const Page = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
+
 
   const handleOpenDrawer = (project) => {
     setSelectedProject(project);
@@ -29,8 +29,7 @@ const Page = () => {
   const handleCloseDrawer = () => {
     setOpenDrawer(false);
     setSelectedProject(null);
-  };
-
+  };  
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -53,9 +52,7 @@ const Page = () => {
                 },
               }}
               title={
-                <span className="font-mono text-yellow-400 rounded text-sm">
-                  Click Me
-                </span>
+                 <span className="font-mono text-yellow-400 rounded text-sm">Click Me</span>
               }
               placement="top"
               TransitionComponent={Fade}
@@ -135,6 +132,25 @@ const Page = () => {
                 >
                   {project.date}
                 </Typography>
+
+                {project.description.youTubeEmbedSrc && (
+                  <Typography
+                    sx={{
+                      position: "absolute",
+                      bottom: 8,
+                      left: 16,
+                      fontSize: "0.75rem",
+                      color: "#ff4a64",
+                      fontFamily: "monospace",
+                      border: "1px solid #ff4a64",
+                      borderStyle: "solid",
+                      padding: "2px 6px",
+                      borderRadius: "12px",
+                    }}
+                  >
+                    Video
+                  </Typography>
+                )}
               </Card>
             </Tooltip>
           </Grid>
