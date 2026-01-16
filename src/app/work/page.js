@@ -14,7 +14,59 @@ export const TimelineComponent = () => {
         <TimelinePoint />
         <TimelineContent>
           <p className="text-sm opacity-60 leading-4 text-slate-200">
-            Feb 2024 - Present, Raleigh, NC, USA
+            April 2025 - Present, Raleigh, NC, USA
+          </p>
+          <h1 className="text-sm text-slate-200">
+            Software Engineer, Machado Labs, NCSU
+          </h1>
+          <ul className="text-sm" style={{ marginLeft: "1rem" }}>
+          <li>
+              - Architected and deployed scalable Spring Boot microservices with
+              PostgreSQL for&nbsp; 
+              <a
+                href="https://rabapp.org/"
+                class="text-red-500 hover:underline"
+              >
+                RABapp
+              </a>
+              , improving data reliability and enabling state agencies to track
+              millions of animal movements nationwide.
+            </li>
+
+            <li>
+              - Led full-stack development of premises and movement tracking
+              modules with Spring Boot backend, Angular UI, and ECharts network
+              graphs, enabling early outbreak detection and contributing to a 6%
+              revenue increase.
+            </li>
+            <li>
+              - Engineered secure RESTful APIs using Spring Security and
+              JWT-based authentication with role-based access control, ensuring
+              data integrity preventing unauthorized access.
+            </li>
+            <li>
+              - Optimized performance by modularizing API service layers,
+              refining SQL queries, and refactoring Angular UI components,
+              reducing server load by 15% and cutting bugs by 22% to improve
+              user experience.
+            </li>
+            <li>
+              - Built Python ETL pipeline to automate ingestion and validation
+              of 15K+ weekly records from heterogeneous sources, eliminating 85%
+              of manual processing time.
+            </li>
+            <li>
+              - Collaborated on code reviews, sprint planning, feature design,
+              and documentation in a fast-paced agile startup environment.
+            </li>
+          </ul>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelinePoint />
+        <TimelineContent>
+          <p className="text-sm opacity-60 leading-4 text-slate-200">
+            Feb 2024 - Mar 2025
           </p>
           <h1 className="text-sm text-slate-200">
             Software Developer (Graduate Research Assistant), Wilson College of
