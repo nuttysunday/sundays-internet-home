@@ -1,0 +1,139 @@
+{
+  "recipes": [
+    {
+      "uuid": "f1b2b9d4-1c5e-4a2e-9c4d-0f7f7a1b5272",
+      "name": "Teriyaki Chicken Casserole",
+      "cuisine": "Japanese",
+      "photo_url_large": "https://www.themealdb.com/images/media/meals/wvpsxx1468256321.jpg",
+      "photo_url_small": "https://www.themealdb.com/images/media/meals/wvpsxx1468256321.jpg/preview",
+      "source_url": "http://www.creationsbykara.com/teriyaki-chicken-and-rice-casserole/",
+      "youtube_url": "https://www.youtube.com/watch?v=4aTr5AMSqV8"
+    },
+    {
+      "uuid": "9c3a2d4f-8b91-4a9f-82a1-52855e7d1c20",
+      "name": "Banana Pancakes",
+      "cuisine": "American",
+      "photo_url_large": "https://www.themealdb.com/images/media/meals/sywswr1511383814.jpg",
+      "photo_url_small": "https://www.themealdb.com/images/media/meals/sywswr1511383814.jpg/preview",
+      "source_url": "https://www.allrecipes.com/recipe/20334/banana-pancakes/",
+      "youtube_url": "https://www.youtube.com/watch?v=kSKtb2NfT3Q"
+    },
+    {
+      "uuid": "7e1f5a2b-4d2a-49f3-9c11-52819d8e6b44",
+      "name": "Cajun Spiced Fish Tacos",
+      "cuisine": "Mexican",
+      "photo_url_large": "https://www.themealdb.com/images/media/meals/uvuyxu1503067369.jpg",
+      "photo_url_small": "https://www.themealdb.com/images/media/meals/uvuyxu1503067369.jpg/preview",
+      "source_url": "https://www.bbcgoodfood.com/recipes/cajun-spiced-fish-tacos",
+      "youtube_url": "https://www.youtube.com/watch?v=NmsWaf-h45M"
+    },
+    {
+      "uuid": "4a9b1e7d-5c0e-4f6b-8c92-52944d1a6f33",
+      "name": "Escovitch Fish",
+      "cuisine": "Jamaican",
+      "photo_url_large": "https://www.themealdb.com/images/media/meals/1520084413.jpg",
+      "photo_url_small": "https://www.themealdb.com/images/media/meals/1520084413.jpg/preview",
+      "source_url": "https://www.unileverfoodsolutions.com.jm/recipe/escovitch-fish-R0055743.html",
+      "youtube_url": "https://www.youtube.com/watch?v=S08_C1S_n_E"
+    },
+    {
+      "uuid": "d6b8a4e1-9c2f-4a4e-8b33-52768d9f5c21",
+      "name": "Apple Frangipane Tart",
+      "cuisine": "British",
+      "photo_url_large": "https://www.themealdb.com/images/media/meals/wxywrq1468235067.jpg",
+      "photo_url_small": "https://www.themealdb.com/images/media/meals/wxywrq1468235067.jpg/preview",
+      "source_url": "https://www.bbcgoodfood.com/recipes/apple-frangipane-tart",
+      "youtube_url": "https://www.youtube.com/watch?v=rp8Slv4INBw"
+    },
+    {
+      "uuid": "8f3a1c2e-5b4d-4c9a-9e21-52955f7d6a10",
+      "name": "Egg Drop Soup",
+      "cuisine": "Chinese",
+      "photo_url_large": "https://www.themealdb.com/images/media/meals/1529446137.jpg",
+      "photo_url_small": "https://www.themealdb.com/images/media/meals/1529446137.jpg/preview",
+      "source_url": "https://www.gimmesomeoven.com/egg-drop-soup/",
+      "youtube_url": "https://www.youtube.com/watch?v=9Xpp4NIn7pg"
+    },
+    {
+      "uuid": "4d6e1f9a-8b2c-4e6d-9c91-52771a3e5b88",
+      "name": "Spicy Arrabiata Penne",
+      "cuisine": "Italian",
+      "photo_url_large": "https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg",
+      "photo_url_small": "https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg/preview",
+      "source_url": "http://www.deliciousmagazine.co.uk/recipes/spicy-pasta-with-tomatoes-and-garlic/",
+      "youtube_url": "https://www.youtube.com/watch?v=1IszT_guI08"
+    },
+    {
+      "uuid": "2b5c8e9f-4a1d-4e7c-9b82-52611f8d3a44",
+      "name": "Pad Thai",
+      "cuisine": "Thai",
+      "photo_url_large": "https://www.themealdb.com/images/media/meals/rvxxuy1468312893.jpg",
+      "photo_url_small": "https://www.themealdb.com/images/media/meals/rvxxuy1468312893.jpg/preview",
+      "source_url": "https://hot-thai-kitchen.com/pad-thai/",
+      "youtube_url": "https://www.youtube.com/watch?v=lkfhwbL_ckc"
+    },
+    {
+      "uuid": "6e3d9a1f-7c4b-4f8e-9d21-52833b6f4c77",
+      "name": "Chicken Tikka Masala",
+      "cuisine": "Indian",
+      "photo_url_large": "https://www.themealdb.com/images/media/meals/wyxwsp1486979827.jpg",
+      "photo_url_small": "https://www.themealdb.com/images/media/meals/wyxwsp1486979827.jpg/preview",
+      "source_url": "https://www.jamieoliver.com/recipes/chicken-recipes/chicken-tikka-masala/",
+      "youtube_url": "https://www.youtube.com/watch?v=fKGoVefhtMQ"
+    },
+    {
+      "uuid": "9a4e7c2d-5f1b-4d8e-9c63-52944e7a1b99",
+      "name": "Beef Tacos",
+      "cuisine": "Mexican",
+      "photo_url_large": "https://www.themealdb.com/images/media/meals/ypxvwv1505333929.jpg",
+      "photo_url_small": "https://www.themealdb.com/images/media/meals/ypxvwv1505333929.jpg/preview",
+      "source_url": "https://www.allrecipes.com/recipe/70343/beef-tacos/",
+      "youtube_url": "https://www.youtube.com/watch?v=0xZHlYJo5RQ"
+    },
+    {
+      "uuid": "3c7f1a4e-8b2d-4c9f-9e51-52766d8f2b33",
+      "name": "French Onion Soup",
+      "cuisine": "French",
+      "photo_url_large": "https://www.themealdb.com/images/media/meals/xvrrux1511783685.jpg",
+      "photo_url_small": "https://www.themealdb.com/images/media/meals/xvrrux1511783685.jpg/preview",
+      "source_url": "https://www.bbcgoodfood.com/recipes/french-onion-soup",
+      "youtube_url": "https://www.youtube.com/watch?v=7sck1xAqHYM"
+    },
+    {
+      "uuid": "5d8e2b9f-4c1a-4f7e-9b32-52855c9d4a66",
+      "name": "Greek Salad",
+      "cuisine": "Greek",
+      "photo_url_large": "https://www.themealdb.com/images/media/meals/svprys1511176755.jpg",
+      "photo_url_small": "https://www.themealdb.com/images/media/meals/svprys1511176755.jpg/preview",
+      "source_url": "https://www.bbcgoodfood.com/recipes/greek-salad",
+      "youtube_url": "https://www.youtube.com/watch?v=hdyMrUZ78XA"
+    },
+    {
+      "uuid": "7f2c9e4a-6b1d-4e8c-9d71-52944a7e3b88",
+      "name": "Beef Bulgogi",
+      "cuisine": "Korean",
+      "photo_url_large": "https://www.themealdb.com/images/media/meals/1529444830.jpg",
+      "photo_url_small": "https://www.themealdb.com/images/media/meals/1529444830.jpg/preview",
+      "source_url": "https://mykoreankitchen.com/bulgogi-korean-beef-bbq/",
+      "youtube_url": "https://www.youtube.com/watch?v=WZqNDgH3hog"
+    },
+    {
+      "uuid": "8e4d1c7f-9a2b-4f5e-9c83-52766e9a4c11",
+      "name": "Poutine",
+      "cuisine": "Canadian",
+      "photo_url_large": "https://www.themealdb.com/images/media/meals/uuyrrx1487327597.jpg",
+      "photo_url_small": "https://www.themealdb.com/images/media/meals/uuyrrx1487327597.jpg/preview",
+      "source_url": "http://www.seriouseats.com/recipes/2016/11/classic-poutine-recipe.html",
+      "youtube_url": "https://www.youtube.com/watch?v=UVAMAoA2_WU"
+    },
+    {
+      "uuid": "4b7e9c2f-5d1a-4e8c-9f62-52833a6d7b44",
+      "name": "Chicken Parmesan",
+      "cuisine": "Italian",
+      "photo_url_large": "https://www.themealdb.com/images/media/meals/vtqxtu1511784197.jpg",
+      "photo_url_small": "https://www.themealdb.com/images/media/meals/vtqxtu1511784197.jpg/preview",
+      "source_url": "https://www.jamieoliver.com/recipes/chicken-recipes/chicken-parmigiana/",
+      "youtube_url": "https://www.youtube.com/watch?v=CI51WINQeCU"
+    }
+  ]
+}
